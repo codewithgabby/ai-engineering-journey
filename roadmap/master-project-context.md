@@ -500,22 +500,51 @@ Topics learned:
 
 ---
 
+## Current Week
+
+Week 2 — Engineering Structure and Clean Python
+
+---
+
+## Day 6 Completed — May 25, 2026
+
+Topics learned:
+
+- type hints
+- professional function design
+- predictable inputs and outputs
+- backend-safe defaults
+- precise typing
+- List[int]
+- scalable backend communication
+- FastAPI typing concepts
+- production-safe backend structure
+
+
+
 # Current Files Created
 
 ```text
 phase-1-backend-mastery/
-└── week-1-python-internals/
+├── week-1-python-internals/
+│   ├── experiments/
+│   │   ├── memory_experiments.py
+│   │   ├── decorator_experiments.py
+│   │   ├── generator_experiments.py
+│   │   └── async_experiments.py
+│   │
+│   └── notes/
+│       ├── python-memory.md
+│       ├── functions-and-decorators.md
+│       ├── iterators-and-generators.md
+│       └── async-python.md
+│
+└── week-2-engineering-structure/
     ├── experiments/
-    │   ├── memory_experiments.py
-    │   ├── decorator_experiments.py
-    │   ├── generator_experiments.py
-    │   └── async_experiments.py
+    │   └── typing_experiments.py
     │
     └── notes/
-        ├── python-memory.md
-        ├── functions-and-decorators.md
-        ├── iterators-and-generators.md
-        └── async-python.md
+        └── type-hinting-and-professional-functions.md
 
 Global Notes:
 notes/

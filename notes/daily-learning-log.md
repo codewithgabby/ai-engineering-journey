@@ -184,3 +184,45 @@ I’m now paying more attention to:
 - architecture thinking
 
 This week was deeper than I expected, and I can already feel my engineering mindset gradually changing.
+
+#######################################################
+
+# May 25, 2026 — Day 6
+
+Today was the beginning of Week 2, and the focus shifted more into writing Python like a professional backend engineer instead of only learning how Python works internally.
+
+Today’s class was mainly about type hinting and professional function design.
+
+At first, type hints looked simple, but as the class continued, I started understanding that they are very important in backend engineering because they help systems become more predictable and easier to maintain.
+
+I learned that backend engineers use type hints to clearly define:
+
+- what data enters a function
+- what data should return from a function
+- how backend systems are expected to behave
+
+One important thing I realized is that professional backend code is not only written for computers. It is also written for engineers, teammates, debugging, maintenance, and scalability.
+
+We also discussed why predictable outputs are important in APIs and backend systems because wrong return types can create bugs and production issues.
+
+Another important concept I understood was default values in functions. For example:
+
+```python
+is_paid: bool = False
+```
+
+This helps backend systems behave safely even when some parameters are not passed into the function.
+
+I also learned why precise typing matters, especially when using things like:
+
+```python
+List[int]
+```
+
+instead of just normal lists.
+
+This helps engineers know exactly what kind of data is expected inside the system.
+
+Today’s class made me realize more deeply that backend engineering is not just about writing working code. It is also about building readable, scalable, predictable, and production-safe systems.
+
+I’m beginning to understand that clean communication between engineers is also part of professional backend engineering.
