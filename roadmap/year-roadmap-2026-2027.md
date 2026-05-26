@@ -551,4 +551,88 @@ production mastery finally
 
 Starting Monday, I’ll guide you step by step like a real engineering mentor.
 
+WEEK 2 PLAN (MAY 25 → MAY 29)
+
+Theme:
+“Engineering Structure and Backend Architecture Thinking”
+
+Monday
+Professional Python Typing
+
+Topics:
+
+type hints
+predictable inputs and outputs
+List[int]
+Optional types
+professional function contracts
+backend-safe defaults
+readable engineering APIs
+
+Implementation:
+
+typing experiments
+backend-safe function design
+
+Tuesday
+Object-Oriented Programming for Backend Engineers
+
+Topics:
+
+classes and objects
+constructors
+object state
+methods
+validation logic
+encapsulation
+backend system modeling
+
+Implementation:
+
+bank account system
+backend entity modeling
+
+Wednesday
+Inheritance and Composition
+
+Topics:
+
+code reuse
+parent-child architecture
+composition vs inheritance
+shared backend behavior
+scalable backend organization
+
+Implementation:
+
+authentication system simulation
+role-based backend modeling
+
+Thursday
+Clean Backend Architecture Foundations
+
+Topics:
+
+service layers
+repositories
+separation of concerns
+modular backend thinking
+backend scalability structure
+
+Implementation:
+
+mini scalable backend structure simulation
+
+Friday
+Engineering Review + Architecture Thinking
+
+Focus:
+
+backend architecture reasoning
+code organization
+system modeling
+scalability analysis
+production engineering thinking
+implementation review
+
 
