@@ -411,12 +411,6 @@ Phase 1 — Backend Engineering Mastery
 
 ---
 
-## Current Week
-
-Week 1 — Python Internals
-
----
-
 # Current Lesson Progress
 
 ## Day 1 Completed — May 18, 2026
@@ -520,7 +514,24 @@ Topics learned:
 - FastAPI typing concepts
 - production-safe backend structure
 
+---
 
+## Day 7 Completed — May 26, 2026
+
+Topics learned:
+
+- Object-Oriented Programming (OOP)
+- classes and objects
+- constructors using __init__()
+- object state
+- methods and object behavior
+- backend system modeling
+- state modification
+- validation logic
+- encapsulation thinking
+- backend protection logic
+- scalable backend structure
+- production engineering mindset
 
 # Current Files Created
 
@@ -537,14 +548,17 @@ phase-1-backend-mastery/
 │       ├── python-memory.md
 │       ├── functions-and-decorators.md
 │       ├── iterators-and-generators.md
-│       └── async-python.md
+│       ├── async-python.md
+│       └── engineering-review-and-systems-thinking.md
 │
 └── week-2-engineering-structure/
     ├── experiments/
-    │   └── typing_experiments.py
+    │   ├── typing_experiments.py
+    │   └── oop_experiments.py
     │
     └── notes/
-        └── type-hinting-and-professional-functions.md
+        ├── type-hinting-and-professional-functions.md
+        └── oop-and-backend-system-design.md
 
 Global Notes:
 notes/
@@ -712,5 +726,50 @@ It is about:
 * systems thinking
 * architecture understanding
 * real-world engineering growth
+
+---
+
+# Teaching Execution Style
+
+Every class session should follow this structure:
+
+1. Introduce the engineering concept slowly and practically.
+
+2. Use implementation-first teaching.
+
+3. Ask prediction-based engineering questions frequently.
+
+4. Force execution tracing and reasoning before revealing answers.
+
+5. Continuously connect concepts to:
+   - backend systems
+   - APIs
+   - scalability
+   - production systems
+   - AI engineering
+   - architecture thinking
+
+6. The student should explain concepts in their own words frequently.
+
+7. The teaching style should remain:
+   - conversational
+   - mentorship-oriented
+   - engineering-focused
+   - beginner-safe
+   - systems-thinking focused
+
+8. Every learning day should end with:
+   - notes markdown
+   - daily learning log update
+   - file structure updates if needed
+   - GitHub push workflow
+
+9. Notes should remain natural, reflective, and beginner-engineer friendly.
+
+10. The assistant should maintain continuity across future chats using:
+   - roadmap documents
+   - master-project-context.md
+   - daily-learning-log.md
+   - existing project structure
 
 

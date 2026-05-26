@@ -226,3 +226,70 @@ This helps engineers know exactly what kind of data is expected inside the syste
 Today’s class made me realize more deeply that backend engineering is not just about writing working code. It is also about building readable, scalable, predictable, and production-safe systems.
 
 I’m beginning to understand that clean communication between engineers is also part of professional backend engineering.
+
+#################################################### 
+
+# May 26, 2026 — Day 7
+
+Today’s class was my first real introduction to Object-Oriented Programming from a backend engineering perspective.
+
+Before today, I mostly saw OOP as creating classes and objects, but today I started understanding that backend engineers actually use OOP to model real systems.
+
+We created classes like:
+
+```python
+class User
+```
+
+and:
+
+```python
+class BankAccount
+```
+
+This helped me understand that classes act like blueprints for real backend entities.
+
+I also learned more deeply how constructors work using:
+
+```python
+__init__()
+```
+
+and how objects carry their own internal data and state inside memory.
+
+Another important thing I understood today was methods.
+
+Methods are functions inside classes, but more importantly, they represent behaviors attached directly to objects.
+
+Example:
+
+```python
+user1.greet()
+```
+
+This feels much cleaner and more scalable than creating random standalone functions everywhere.
+
+One of the biggest realizations I had today was object state.
+
+For example:
+
+```python
+self.balance += amount
+```
+
+This showed me how backend systems constantly modify object state internally, just like real banking systems update balances after deposits or withdrawals.
+
+We also discussed validation logic inside methods.
+
+Example:
+
+```python
+if amount > self.balance:
+```
+
+This helped me understand that backend engineers do not trust users completely and that backend systems must always protect themselves from invalid operations.
+
+Today’s class made me realize that backend engineering is really about organizing, modeling, and protecting systems properly.
+
+I’m beginning to understand OOP beyond just syntax.
+
