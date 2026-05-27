@@ -293,3 +293,74 @@ Today’s class made me realize that backend engineering is really about organiz
 
 I’m beginning to understand OOP beyond just syntax.
 
+################################################# 
+
+# May 27, 2026 — Day 8
+
+Today’s class was very interesting because I started understanding inheritance and composition from a real backend engineering perspective.
+
+At first, inheritance looked confusing, but as the explanations continued, I started understanding that inheritance is mainly about reusing shared behavior without rewriting the same code repeatedly.
+
+We created a parent class called:
+
+```python
+class User
+```
+
+and child classes like:
+
+```python
+class Admin(User)
+```
+
+and:
+
+```python
+class Customer(User)
+```
+
+This helped me understand that the child classes inherit behavior from the parent class.
+
+For example, both Admin and Customer could use:
+
+```python
+login()
+```
+
+without rewriting the login method again.
+
+One major thing I realized today is that inheritance helps backend engineers avoid duplication and build scalable systems with shared behavior.
+
+I also learned about method overriding.
+
+At first, I was confused about it, but later I understood that overriding means a child class can customize inherited behavior.
+
+Example:
+
+```python
+class Admin(User):
+
+    def login(self):
+```
+
+This means the Admin class can have its own special login behavior, like extra security or OTP verification, while still inheriting from User.
+
+Another major concept today was composition.
+
+This part really changed my understanding of backend architecture.
+
+I learned that composition means systems work together instead of everything inheriting from one giant hierarchy.
+
+Example:
+
+```python
+self.notification_service = NotificationService()
+```
+
+This means the User class has a NotificationService instead of becoming one.
+
+This helped me understand modular backend architecture and separation of concerns.
+
+One of the biggest realizations I had today is that large backend systems are really about organizing relationships between systems properly.
+
+Today’s class made me understand backend architecture much more deeply than before.

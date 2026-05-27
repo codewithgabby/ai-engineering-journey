@@ -595,6 +595,10 @@ backend entity modeling
 Wednesday
 Inheritance and Composition
 
+Status:
+
+COMPLETED
+
 Topics:
 
 code reuse

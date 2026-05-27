@@ -533,6 +533,24 @@ Topics learned:
 - scalable backend structure
 - production engineering mindset
 
+---
+
+## Day 8 Completed — May 27, 2026
+
+Topics learned:
+
+- inheritance
+- parent and child classes
+- reusable backend behavior
+- method overriding
+- shared authentication behavior
+- composition
+- modular backend architecture
+- separation of concerns
+- scalable backend collaboration
+- composition vs inheritance
+- backend architecture relationships
+
 # Current Files Created
 
 ```text
@@ -553,12 +571,14 @@ phase-1-backend-mastery/
 │
 └── week-2-engineering-structure/
     ├── experiments/
-    │   ├── typing_experiments.py
-    │   └── oop_experiments.py
-    │
-    └── notes/
-        ├── type-hinting-and-professional-functions.md
-        └── oop-and-backend-system-design.md
+│   ├── typing_experiments.py
+│   ├── oop_experiments.py
+│   └── inheritance_experiments.py
+│
+└── notes/
+    ├── type-hinting-and-professional-functions.md
+    ├── oop-and-backend-system-design.md
+    └── inheritance-and-composition.md
 
 Global Notes:
 notes/
