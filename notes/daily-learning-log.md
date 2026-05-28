@@ -364,3 +364,47 @@ This helped me understand modular backend architecture and separation of concern
 One of the biggest realizations I had today is that large backend systems are really about organizing relationships between systems properly.
 
 Today’s class made me understand backend architecture much more deeply than before.
+
+################################################## 
+
+# May 28, 2026 — Day 9
+
+Today’s class was more focused on backend architecture and how large backend systems are properly organized professionally.
+
+One major thing I understood today is that scalable backend engineering is not just about writing APIs or endpoints. It is mostly about how systems are organized internally.
+
+We started learning about separation of concerns.
+
+I already understood this a little from my FastAPI experience because I know backend engineers usually separate files into routers, services, schemas, repositories, and database layers.
+
+But today’s class helped me understand the deeper engineering reason behind that architecture style.
+
+I learned that repositories mainly handle database operations while services handle business logic and workflows.
+
+One important realization I had today is that large backend systems cannot survive if everything is written inside one giant main.py file.
+
+That would become:
+- difficult to debug
+- stressful to maintain
+- dangerous in production
+- impossible to scale with teams
+
+Today’s class also connected very well with the previous class on composition.
+
+I learned that composition and separation of concerns work together because modular systems can collaborate safely without becoming tightly connected.
+
+We also discussed tight coupling and loose coupling.
+
+At first, I honestly did not understand the explanation fully, but later the restaurant analogy made everything much clearer.
+
+I now understand that tightly coupled systems are dangerous because changing one system can break multiple other systems.
+
+Loose coupling allows systems to work independently while still collaborating together safely.
+
+One major concept I learned today was dependency injection.
+
+Instead of one system creating another system internally, engineers can inject dependencies into systems so they become easier to replace, test, and maintain later.
+
+Today’s class really changed how I see backend engineering architecture.
+
+I’m beginning to understand that professional backend engineering is mostly about organizing systems properly, not just writing random code.
