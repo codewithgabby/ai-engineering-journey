@@ -556,8 +556,11 @@ WEEK 2 PLAN (MAY 25 → MAY 29)
 Theme:
 “Engineering Structure and Backend Architecture Thinking”
 
-Monday
-Professional Python Typing
+## Monday — Professional Python Typing
+
+Status:
+
+COMPLETED
 
 Topics:
 
@@ -574,8 +577,11 @@ Implementation:
 typing experiments
 backend-safe function design
 
-Tuesday
-Object-Oriented Programming for Backend Engineers
+## Tuesday — Object-Oriented Programming for Backend Engineers
+
+Status:
+
+COMPLETED
 
 Topics:
 
@@ -592,8 +598,7 @@ Implementation:
 bank account system
 backend entity modeling
 
-Wednesday
-Inheritance and Composition
+## Wednesday — Inheritance and Composition
 
 Status:
 
@@ -612,8 +617,11 @@ Implementation:
 authentication system simulation
 role-based backend modeling
 
-Thursday
-Clean Backend Architecture Foundations
+## Thursday — Clean Backend Architecture Foundations
+
+Status:
+
+COMPLETED
 
 Topics:
 
@@ -627,8 +635,87 @@ Implementation:
 
 mini scalable backend structure simulation
 
+## Friday — Engineering Review + Architecture Thinking
+
+Status:
+
+COMPLETED
+
+WEEK 3 PLAN (JUNE 1 → JUNE 5)
+
+Theme:
+"Building Production-Ready Backend Foundations"
+
+Monday
+Dependency Injection Deep Dive
+
+Topics:
+
+- dependency injection
+- inversion of control
+- service wiring
+- testable architecture
+- scalable backend design
+
+Implementation:
+
+- dependency injection experiments
+
+Tuesday
+Context Managers and Resource Management
+
+Topics:
+
+- with statements
+- context managers
+- resource cleanup
+- database connection management
+- backend safety
+
+Implementation:
+
+- custom context manager experiments
+
+Wednesday
+Testing for Backend Engineers
+
+Topics:
+
+- unit testing
+- integration testing
+- pytest fundamentals
+- testable code
+- backend confidence
+
+Implementation:
+
+- backend testing experiments
+
+Thursday
+Error Handling and Backend Reliability
+
+Topics:
+
+- exception handling
+- custom exceptions
+- logging concepts
+- production-safe APIs
+- backend resilience
+
+Implementation:
+
+- reliable backend simulation
+
 Friday
-Engineering Review + Architecture Thinking
+Engineering Review + Production Thinking
+
+Focus:
+
+- backend reliability
+- architecture review
+- testing mindset
+- production engineering reasoning
+- systems-thinking reinforcement
 
 Focus:
 

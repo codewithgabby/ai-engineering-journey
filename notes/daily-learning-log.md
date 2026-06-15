@@ -408,3 +408,29 @@ Instead of one system creating another system internally, engineers can inject d
 Today’s class really changed how I see backend engineering architecture.
 
 I’m beginning to understand that professional backend engineering is mostly about organizing systems properly, not just writing random code.
+
+################################################## 
+
+# May 29, 2026 — Day 10
+
+Today was not focused on learning a completely new concept. Instead, it was an engineering review day where I connected many of the concepts I have learned over the past two weeks.
+
+One thing I noticed today is that backend engineering is becoming less about individual pieces of code and more about understanding how systems work together.
+
+We reviewed services, repositories, composition, separation of concerns, dependency injection, and async thinking.
+
+I worked through several architecture scenarios and practiced identifying which layer should handle each responsibility.
+
+One of the most useful exercises today was breaking down a business workflow into routers, services, and repositories.
+
+I learned that routers mainly receive requests and return responses, repositories handle storage and database operations, while services coordinate business workflows.
+
+Another important realization was understanding how composition allows multiple systems to work together without becoming tightly connected.
+
+We also discussed how these backend concepts will eventually connect to AI systems.
+
+A major breakthrough for me today was realizing that many future AI systems will still follow the same architectural patterns I am learning now.
+
+Even though the technologies may change, the engineering thinking remains the same.
+
+Today's review helped me see the bigger picture and how all the concepts from Week 1 and Week 2 connect together.

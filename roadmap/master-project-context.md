@@ -496,7 +496,11 @@ Topics learned:
 
 ## Current Week
 
-Week 2 — Engineering Structure and Clean Python
+Week 2 Completed — Engineering Structure and Backend Architecture Thinking
+
+Next Week:
+
+Week 3 — Production-Ready Backend Foundations
 
 ---
 
@@ -551,6 +555,38 @@ Topics learned:
 - composition vs inheritance
 - backend architecture relationships
 
+## Day 9 Completed — May 28, 2026
+
+Topics learned:
+
+- separation of concerns
+- service layers
+- repository pattern
+- clean backend architecture
+- dependency injection concepts
+- loose coupling
+- tight coupling
+- modular backend design
+- scalable backend organization
+- backend workflow orchestration
+- architecture-first thinking
+
+## Day 10 Completed — May 29, 2026
+
+Topics learned:
+
+- engineering review
+- architecture thinking
+- service orchestration
+- router-service-repository flow
+- scalable system design
+- architecture responsibility boundaries
+- backend workflow reasoning
+- AI system architecture parallels
+- composition review
+- async workflow analysis
+- systems-thinking reinforcement
+
 # Current Files Created
 
 ```text
@@ -571,14 +607,17 @@ phase-1-backend-mastery/
 │
 └── week-2-engineering-structure/
     ├── experiments/
-│   ├── typing_experiments.py
-│   ├── oop_experiments.py
-│   └── inheritance_experiments.py
+    │   ├── typing_experiments.py
+    │   ├── oop_experiments.py
+    │   ├── inheritance_experiments.py
+    │   └── architecture_experiments.py
 │
 └── notes/
     ├── type-hinting-and-professional-functions.md
     ├── oop-and-backend-system-design.md
-    └── inheritance-and-composition.md
+    ├── inheritance-and-composition.md
+    ├── clean-backend-architecture.md
+    └── engineering-review-and-architecture-thinking.md
 
 Global Notes:
 notes/
