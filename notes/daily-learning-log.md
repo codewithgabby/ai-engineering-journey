@@ -434,3 +434,23 @@ A major breakthrough for me today was realizing that many future AI systems will
 Even though the technologies may change, the engineering thinking remains the same.
 
 Today's review helped me see the bigger picture and how all the concepts from Week 1 and Week 2 connect together.
+
+#############################################################
+
+## Day 11 — June 1, 2026
+
+Today, I started Week 3 of my AI Engineering journey. The focus of today's lesson was Dependency Injection and understanding how professional backend systems connect different services together.
+
+At first, I was mixing up composition, inheritance, and dependency injection because they all seem related. But as the lesson went on, I started seeing the differences more clearly.
+
+I learned that composition answers the question, "Which systems work together?" For example, a UserService can have an EmailService, NotificationService, or Repository. Different services collaborate to achieve a business goal.
+
+I then learned that dependency injection answers a different question: "How does one service receive another service?" Instead of creating dependencies directly inside a class, professional systems receive those dependencies from outside. This makes systems easier to maintain, test, and scale.
+
+One of the biggest realizations I had today was that hardcoding dependencies can become a nightmare in production systems. If a company decides to switch from one provider to another, engineers may need to change code in many places. With dependency injection, we can simply swap the implementation while keeping the main business logic almost unchanged.
+
+I also understood why dependency injection makes testing easier. During testing, engineers do not always want to send real emails, process real payments, or call real AI APIs. They can inject fake services and focus only on testing the business logic.
+
+Another important realization was that dependency injection is not just a backend concept. The same idea applies to AI systems. An AI service should not depend directly on OpenAI or any single provider. It should be able to work with different model providers such as Claude, Gemini, or local models without major rewrites.
+
+Today's lesson made me realize that production engineering is largely about designing systems for change. Technologies, providers, and business requirements constantly change, and dependency injection is one of the patterns that helps engineers build systems that can adapt without breaking everything.

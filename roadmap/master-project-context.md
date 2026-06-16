@@ -496,10 +496,6 @@ Topics learned:
 
 ## Current Week
 
-Week 2 Completed — Engineering Structure and Backend Architecture Thinking
-
-Next Week:
-
 Week 3 — Production-Ready Backend Foundations
 
 ---
@@ -587,6 +583,22 @@ Topics learned:
 - async workflow analysis
 - systems-thinking reinforcement
 
+## Day 11 Completed — June 1, 2026
+
+Topics learned:
+
+- dependency injection
+- inversion of control concepts
+- service wiring
+- composition vs dependency injection
+- loose coupling
+- testable backend design
+- provider swapping
+- production maintainability
+- FastAPI dependency injection concepts
+- AI service dependency patterns
+- designing systems for change
+
 # Current Files Created
 
 ```text
@@ -605,19 +617,26 @@ phase-1-backend-mastery/
 │       ├── async-python.md
 │       └── engineering-review-and-systems-thinking.md
 │
-└── week-2-engineering-structure/
-    ├── experiments/
-    │   ├── typing_experiments.py
-    │   ├── oop_experiments.py
-    │   ├── inheritance_experiments.py
-    │   └── architecture_experiments.py
+├── week-2-engineering-structure/
+│   ├── experiments/
+│   │   ├── typing_experiments.py
+│   │   ├── oop_experiments.py
+│   │   ├── inheritance_experiments.py
+│   │   └── architecture_experiments.py
+│   │
+│   └── notes/
+│       ├── type-hinting-and-professional-functions.md
+│       ├── oop-and-backend-system-design.md
+│       ├── inheritance-and-composition.md
+│       ├── clean-backend-architecture.md
+│       └── engineering-review-and-architecture-thinking.md
 │
-└── notes/
-    ├── type-hinting-and-professional-functions.md
-    ├── oop-and-backend-system-design.md
-    ├── inheritance-and-composition.md
-    ├── clean-backend-architecture.md
-    └── engineering-review-and-architecture-thinking.md
+└── week-3-production-foundations/
+    ├── experiments/
+    │   └── dependency_injection_experiments.py
+    │
+    └── notes/
+        └── dependency-injection-and-scalable-backends.md
 
 Global Notes:
 notes/
