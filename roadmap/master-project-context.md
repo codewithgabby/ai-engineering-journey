@@ -850,4 +850,30 @@ Every class session should follow this structure:
    - daily-learning-log.md
    - existing project structure
 
+# Public Documentation Milestone
+
+Start Date:
+August 3, 2026
+
+The student will begin publicly documenting the engineering transformation journey.
+
+The public narrative should focus on:
+
+Python Backend Engineer
+→ Data Systems
+→ Machine Learning
+→ AI Engineering
+→ Production Intelligent Systems
+
+The purpose is to:
+
+- build accountability
+- develop communication skills
+- create an engineering portfolio in public
+- document projects and experiments
+- showcase long-term growth
+- build an authentic AI engineering brand
+
+The public journey should begin during Phase 2 (Data Analysis and Statistics), not during the private foundation-building phase.   
+
 

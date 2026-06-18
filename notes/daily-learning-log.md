@@ -454,3 +454,65 @@ I also understood why dependency injection makes testing easier. During testing,
 Another important realization was that dependency injection is not just a backend concept. The same idea applies to AI systems. An AI service should not depend directly on OpenAI or any single provider. It should be able to work with different model providers such as Claude, Gemini, or local models without major rewrites.
 
 Today's lesson made me realize that production engineering is largely about designing systems for change. Technologies, providers, and business requirements constantly change, and dependency injection is one of the patterns that helps engineers build systems that can adapt without breaking everything.
+
+#############################################################
+
+## Day 12 — June 2, 2026
+
+
+Today, I learned about Context Managers and why resource management is extremely important in backend engineering.
+
+I started by understanding what resources are in programming. Resources can be things like files, database connections, Redis connections, API connections, sockets, and other objects that a program temporarily uses and must release properly.
+
+One important realization today was that resources are limited. For example, a database can only handle a certain number of active connections at a time. If connections are continuously opened and never closed, they keep accumulating until the database eventually refuses new connections. This can make an application slow, unresponsive, or completely unavailable.
+
+I also learned that Python introduced Context Managers to help engineers safely manage resources. The general idea is:
+
+Acquire Resource
+→ Use Resource
+→ Release Resource
+
+I learned that the `with` statement automatically handles cleanup for us.
+
+For example:
+
+```python
+with open("notes.txt") as file:
+    content = file.read()
+```
+
+Python automatically opens the file, allows us to use it, and closes it when we leave the block.
+
+I learned that cleanup happens immediately after leaving the `with` block and before the rest of the program continues executing.
+
+I also learned about the two special methods that make Context Managers work:
+
+* `__enter__()`
+* `__exit__()`
+
+`__enter__()` is responsible for preparing or acquiring the resource, while `__exit__()` is responsible for cleaning up and releasing the resource.
+
+Another major realization today was that `__exit__()` runs even if an exception occurs inside the `with` block. This guarantees resource cleanup and prevents resource leaks.
+
+I connected this idea to backend engineering and realized that Context Managers are heavily used for:
+
+* database sessions
+* transactions
+* file handling
+* network connections
+* locks
+* Redis clients
+* AI model sessions
+* vector database clients
+
+The biggest takeaway from today's class is that professional backend systems are designed around safe resource management. Context Managers make systems more reliable because cleanup is guaranteed whether code succeeds or fails.
+
+Mental model from today:
+
+Acquire Resource
+→ Use Resource
+→ Automatic Cleanup
+
+And:
+
+`__exit__()` always runs.

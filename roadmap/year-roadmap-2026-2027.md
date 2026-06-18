@@ -177,6 +177,26 @@ This phase trains your engineering brain to:
 observe patterns
 analyze systems
 reason with data
+
+PUBLIC JOURNEY MILESTONE
+
+Start Date:
+August 3, 2026
+
+Public Brand Positioning:
+
+Building in Public:
+Python Backend Engineer → AI Systems Engineer
+
+Goals:
+
+- document learning consistently
+- share projects and experiments
+- publish daily learning insights
+- build accountability
+- create an engineering portfolio in public
+- demonstrate long-term transformation
+
 PHASE 3 — MACHINE LEARNING FOUNDATIONS
 (October → December 2026)
 
