@@ -516,3 +516,82 @@ Acquire Resource
 And:
 
 `__exit__()` always runs.
+
+#############################################################
+
+## Day 13 — June 3, 2026
+
+### Error Handling and Custom Exceptions
+
+Today, I learned about error handling and why professional backend systems are designed around failure.
+
+I realized that production systems should never assume that everything will always work correctly. Users can provide invalid inputs, databases can become unavailable, external APIs can fail, payment providers can go down, and AI services can become unreachable.
+
+One of the biggest lessons today was understanding the complete exception-handling flow in Python.
+
+I learned:
+
+* `try` is where Python attempts risky code.
+* `except` runs only when an exception occurs.
+* `else` runs only if the try block succeeds.
+* `finally` always runs and is commonly used for cleanup operations like closing database connections and releasing resources.
+* `raise` allows engineers to intentionally create exceptions when business rules are violated.
+* custom exceptions make large applications easier to understand and maintain.
+
+I also realized that exception handling is not really about preventing applications from crashing. It is about controlling failures and responding to them safely.
+
+Another major lesson today was learning that different layers in a backend system have different responsibilities when failures occur.
+
+### Router
+
+* validates incoming requests
+* checks invalid formats
+* checks missing fields
+* checks incorrect data types
+
+### Service
+
+* handles business rules
+* orchestrates workflows
+* decides how failures should be handled
+* commonly raises business-related exceptions
+
+### Repository
+
+* communicates with the database
+* performs queries and persistence operations
+* usually notices database-related failures first
+
+The biggest realization today was learning to ask three questions whenever something goes wrong:
+
+Who noticed the problem first?
+
+Who should decide what to do?
+
+What should the user receive?
+
+I practiced this reasoning using examples like user registration, insufficient account balances, payment failures, and database connection problems.
+
+I also learned that professional systems use meaningful exceptions instead of generic ones. Examples include:
+
+* UserAlreadyExistsError
+* InsufficientBalanceError
+* PaymentProviderError
+
+These custom exceptions make systems easier to debug and easier for other engineers to understand.
+
+Today's lesson felt less like learning Python syntax and more like learning how engineers think when designing reliable systems. I am starting to understand that production engineering is not about avoiding failures completely. It is about designing systems that fail safely, recover gracefully, and continue serving users.
+
+### Mental Model from Today
+
+```text
+Failure
+↓
+Detect Problem
+↓
+Handle Problem
+↓
+Return Meaningful Response
+↓
+Continue Serving Users
+```
