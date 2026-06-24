@@ -595,3 +595,73 @@ Return Meaningful Response
 ↓
 Continue Serving Users
 ```
+
+####################################################### 
+
+## Day 14 — June 4, 2026
+
+### Logging and Observability Foundations
+
+Today, I learned why professional systems rely heavily on logging and why logs are considered one of the most important tools in production engineering.
+
+I learned that logs are records of events happening inside an application. They help engineers understand what the application was doing before a success or failure occurred.
+
+One of my biggest realizations today was that logs are similar to the black box recorder inside an airplane. When something goes wrong, engineers use logs to investigate what happened instead of guessing.
+
+I learned that good logs should answer questions such as:
+
+* What happened?
+* Where did it happen?
+* When did it happen?
+* Was the operation successful?
+* Did something fail?
+
+I also learned that not everything should be logged. Sensitive information like passwords, secret keys, tokens, and credit card numbers should never appear inside logs.
+
+Another important lesson today was understanding logging levels.
+
+INFO:
+Used for normal application activities.
+
+WARNING:
+Used for unusual situations that do not stop the system.
+
+ERROR:
+Used when something fails and prevents normal operation.
+
+I also connected today's lesson with our backend architecture.
+
+Router
+↓
+Service
+↓
+Repository
+↓
+Database
+
+I learned that logs can help engineers quickly determine where a failure happened. For example, if a database connection fails, the repository layer usually notices it first and logs the failure as an ERROR.
+
+Another major realization today was understanding the relationship between logs and exceptions.
+
+Exceptions control failures.
+
+Logs explain failures.
+
+Together, they allow applications to fail safely, communicate meaningful responses to users, and continue serving other requests.
+
+Today's lesson felt less like learning Python syntax and more like learning how engineers observe and investigate systems in production.
+
+Mental model from today:
+
+Request
+↓
+Application Performs Work
+↓
+Log Important Events
+↓
+Failures Become Visible
+↓
+Investigate
+↓
+Improve Reliability
+
