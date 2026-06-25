@@ -661,10 +661,10 @@ Status:
 
 COMPLETED
 
-WEEK 3 PLAN (JUNE 1 → JUNE 5)
+# WEEK 3 PLAN (JUNE 1 → JUNE 5)
 
 Theme:
-"Building Production-Ready Backend Foundations"
+"Production Foundations and Backend Reliability"
 
 ## Monday — Dependency Injection Deep Dive
 
@@ -674,79 +674,129 @@ COMPLETED
 
 Topics:
 
-- dependency injection
-- inversion of control
-- service wiring
-- testable architecture
-- scalable backend design
+* dependency injection
+* inversion of control
+* service wiring
+* composition vs dependency injection
+* loose coupling
+* scalable backend design
+* FastAPI dependency injection
+* production maintainability
 
 Implementation:
 
-- dependency injection experiments
+* dependency_injection_experiments.py
 
-Tuesday
-Context Managers and Resource Management
+---
+
+## Tuesday — Context Managers and Resource Management
+
+Status:
+
+COMPLETED
 
 Topics:
 
-- with statements
-- context managers
-- resource cleanup
-- database connection management
-- backend safety
+* context managers
+* with statement
+* **enter**()
+* **exit**()
+* automatic resource cleanup
+* database session management
+* file handling
+* backend resource safety
 
 Implementation:
 
-- custom context manager experiments
+* context_manager_experiments.py
 
-Wednesday
-Testing for Backend Engineers
+---
+
+## Wednesday — Exception Handling and Custom Exceptions
+
+Status:
+
+COMPLETED
 
 Topics:
 
-- unit testing
-- integration testing
-- pytest fundamentals
-- testable code
-- backend confidence
+* try
+* except
+* else
+* finally
+* raise
+* custom exceptions
+* backend reliability
+* graceful failure
+* defensive programming
 
 Implementation:
 
-- backend testing experiments
+* exception_handling_experiments.py
 
-Thursday
-Error Handling and Backend Reliability
+---
+
+## Thursday — Logging and Observability Foundations
+
+Status:
+
+COMPLETED
 
 Topics:
 
-- exception handling
-- custom exceptions
-- logging concepts
-- production-safe APIs
-- backend resilience
+* logging
+* observability
+* INFO
+* WARNING
+* ERROR
+* production diagnostics
+* debugging
+* logs vs user responses
 
 Implementation:
 
-- reliable backend simulation
+* logging_experiments.py
 
-Friday
-Engineering Review + Production Thinking
+---
+
+## Friday — Engineering Review and Production Systems Thinking
+
+Status:
+
+COMPLETED
 
 Focus:
 
-- backend reliability
-- architecture review
-- testing mindset
-- production engineering reasoning
-- systems-thinking reinforcement
+* dependency injection review
+* context manager review
+* exception handling review
+* custom exception review
+* logging review
+* production workflow reasoning
+* graceful degradation
+* architecture thinking
+* backend systems integration
+* AI systems architecture connections
 
-Focus:
+# WEEK 4 PLAN (JUNE 8 → JUNE 12)
 
-backend architecture reasoning
-code organization
-system modeling
-scalability analysis
-production engineering thinking
-implementation review
+Theme:
+"Professional Backend Development Practices"
+
+Status:
+
+COMING NEXT
+
+Topics will include:
+
+* testing fundamentals
+* pytest
+* mocking
+* backend debugging
+* code quality
+* clean coding practices
+* backend maintainability
+* engineering best practices
+
 
 

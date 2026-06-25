@@ -665,3 +665,98 @@ Investigate
 ↓
 Improve Reliability
 
+##################################################   
+
+## Day 15 — June 5, 2026
+
+### Week 3 Engineering Review and Production Systems Thinking
+
+Today was our Week 3 review, and it helped me connect all the concepts I learned throughout the week into one complete backend workflow.
+
+Instead of learning each topic separately, I now understand how they work together inside a real production backend application.
+
+One of the biggest realizations I had this week is that production systems are built with the expectation that failures will happen. The goal is not to prevent every failure, but to detect failures quickly, handle them safely, and allow the application to continue serving users whenever possible.
+
+We reviewed all the major topics from this week:
+
+* Dependency Injection
+* Context Managers
+* Exception Handling
+* Custom Exceptions
+* Logging and Observability
+
+I now understand that dependency injection helps reduce coupling by allowing services to receive their dependencies instead of creating them themselves. This makes applications easier to test, maintain, and scale.
+
+I also learned that context managers automatically clean up resources such as database connections and files, even when exceptions occur. This prevents resource leaks and makes production systems much more reliable.
+
+Another important lesson this week was understanding how exceptions work in professional systems. Exceptions are not meant to crash an application. They provide a controlled way of handling failures and returning meaningful responses to users.
+
+Custom exceptions made even more sense after today's review. Instead of using generic exceptions everywhere, professional applications create exceptions that clearly describe what went wrong, making debugging and maintenance much easier.
+
+We also reviewed logging and observability. I learned that logs are written for engineers, not for users. Logs help engineers understand what happened inside an application, while users should receive simple and friendly responses instead of internal error messages.
+
+One of my favorite discussions today was about Redis. Even though I have not learned Redis yet, I learned an important production engineering principle. Not every component failure should stop the entire application. If a cache becomes unavailable but the database is still working, the application should continue operating without the cache whenever possible. This introduced me to the idea of graceful degradation, where systems continue providing service with reduced functionality instead of failing completely.
+
+The biggest mindset shift this week is that I am beginning to think less about writing Python code and more about designing reliable backend systems. Instead of asking, "How do I write this function?", I am starting to ask questions like:
+
+* Which layer should handle this responsibility?
+* Where should this failure be detected?
+* What should be logged?
+* Should the application continue or stop?
+* What response should the user receive?
+
+These are the kinds of questions professional backend engineers ask when designing production systems.
+
+### Week 3 Mental Model
+
+```text
+User Request
+        │
+        ▼
+Router
+        │
+        ▼
+Dependency Injection
+        │
+        ▼
+Service
+        │
+        ▼
+Repository
+        │
+        ▼
+Context Manager Opens Resources
+        │
+        ▼
+Database
+
+        │
+        ▼
+If Success
+        │
+        ▼
+Log INFO
+        │
+        ▼
+Return Success
+
+───────────────
+
+If Failure
+        │
+        ▼
+Log ERROR
+        │
+        ▼
+Raise Custom Exception
+        │
+        ▼
+Return Friendly Response
+        │
+        ▼
+Context Manager Cleans Resources
+```
+
+This week felt like a major step forward because I can now see how multiple engineering concepts fit together to build reliable, scalable, and production-ready backend systems. This gives me much more confidence that I am progressing toward becoming an AI systems engineer rather than simply learning isolated Python features.
+
+
