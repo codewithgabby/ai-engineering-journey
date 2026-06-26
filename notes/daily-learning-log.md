@@ -759,4 +759,60 @@ Context Manager Cleans Resources
 
 This week felt like a major step forward because I can now see how multiple engineering concepts fit together to build reliable, scalable, and production-ready backend systems. This gives me much more confidence that I am progressing toward becoming an AI systems engineer rather than simply learning isolated Python features.
 
+##################################################  
+
+## Day 16 — June 8, 2026
+
+### Testing Mindset and Engineering Thinking
+
+Today marked the beginning of Week 4, and instead of jumping straight into using a testing framework, I learned why testing exists in the first place.
+
+One thing I appreciated about today's class is that we focused on developing the mindset of a tester before learning any new tools. It reminded me that understanding why something exists is more important than memorizing how to use it.
+
+I learned that software engineering is not just about writing code. Professional engineers are responsible for proving that their code works correctly before it reaches users.
+
+We discussed the difference between manual testing and automated testing. Manual testing is useful for small checks, but it becomes inefficient and repetitive as applications grow. Automated testing allows the computer to verify software behavior every time the code changes.
+
+Another important concept I learned today was the difference between a happy path and edge cases.
+
+The happy path represents normal user behavior where everything works as expected.
+
+Edge cases represent unusual situations that could expose hidden bugs, such as:
+
+* empty input fields
+* invalid email formats
+* weak passwords
+* negative values
+* zero values
+* amounts larger than the available balance
+
+One of the biggest mindset shifts today was learning that testers think differently from programmers.
+
+A programmer often asks:
+
+"Does my code work?"
+
+A tester asks:
+
+"What inputs could cause this code to fail?"
+
+I also learned that every test case should clearly define both the input and the expected output. This makes tests easier to understand, repeat, and automate later using tools like pytest.
+
+Today's lesson connected directly to backend engineering because APIs must be tested against both valid and invalid requests to ensure they behave safely under different conditions.
+
+I can already see how today's mindset will prepare me for writing real automated tests in the coming days.
+
+### Mental Model
+
+Write Code
+↓
+Think Like a Tester
+↓
+Design Test Cases
+↓
+Verify Behavior
+↓
+Build Reliable Software
+
+
 
