@@ -814,5 +814,49 @@ Verify Behavior
 ↓
 Build Reliable Software
 
+#################################################  
+
+## Day 17 — June 9, 2026
+
+### Introduction to pytest and Automated Testing
+
+Today was one of the biggest milestones in my backend engineering journey so far because I installed and used my first professional testing framework: pytest.
+
+Before installing anything, I learned why Python projects use virtual environments. Instead of simply following commands, I understood that virtual environments isolate project dependencies so that each project has its own independent Python environment.
+
+I created my first virtual environment using Python's built-in venv module and activated it successfully. After that, I verified that my project was actually using the Python interpreter inside the virtual environment instead of the global Python installation. This helped me understand that professional engineers verify their environments rather than assuming everything is configured correctly.
+
+Next, I installed pytest using pip. I also learned that installing one package often installs several additional packages known as dependencies. Running `pip list` showed me every package currently installed inside my virtual environment, helping me see how package management works in real projects.
+
+The most exciting part of today's lesson was writing my first automated test.
+
+Instead of printing values manually, I learned how to use the `assert` statement to describe what I expect the code to return. I also learned that pytest automatically discovers functions whose names begin with `test_`, executes them, and reports whether they pass or fail.
+
+Running pytest for the first time and seeing:
+
+`1 passed`
+
+felt like a major achievement. It showed me how professional engineers build confidence in their software by allowing the computer to verify behavior automatically.
+
+One mindset shift I had today was realizing that software engineering is not only about writing code. It is also about building reliable systems that can prove they still work after changes are made.
+
+Today's lesson connected directly to backend engineering because every production API should eventually have automated tests protecting its business logic and preventing regressions.
+
+### Mental Model
+
+Create Environment
+↓
+Install Dependencies
+↓
+Write Code
+↓
+Write Tests
+↓
+Run pytest
+↓
+Verify Behavior
+↓
+Deploy With Confidence
+
 
 
