@@ -858,5 +858,39 @@ Verify Behavior
 ↓
 Deploy With Confidence
 
+#################################################  
+
+## Day 18 — June 10, 2026
+
+### Reading pytest Failure Reports and Multiple Tests
+
+Today's lesson completely changed the way I look at failed tests.
+
+Yesterday, I celebrated seeing my first passing test. Today, I intentionally made a test fail so I could learn how professional engineers read pytest failure reports.
+
+Instead of being overwhelmed by the red output, I learned to treat it like a debugging guide. I now know how to identify which test failed, the exact line that caused the failure, the actual value returned by the function, the expected value defined by the test, and why pytest raises an AssertionError.
+
+One of the biggest lessons today was understanding that a failed test does not automatically mean the application is wrong. Sometimes the code has a bug, but other times the test itself has the wrong expectation. From now on, whenever a test fails, I should first ask whether the application is incorrect or whether my test is incorrect.
+
+I also learned how pytest discovers tests automatically. It searches for files and functions that follow the `test_` naming convention and executes every discovered test. If one test fails, pytest usually continues running the remaining tests before showing a summary of all passing and failing tests.
+
+Another important mindset shift came when discussing withdrawal examples. I realized that testing is not only about calculating numbers. Before calculating a result, I should first ask whether the requested operation is even valid according to the business rules. Invalid inputs should be rejected rather than processed.
+
+Today's class helped me move beyond simply writing tests. I began learning how to investigate failures, reason about expectations, and think more like a backend engineer responsible for maintaining reliable software.
+
+### Mental Model
+
+Run Tests
+↓
+Read Failure Report
+↓
+Compare Actual vs Expected
+↓
+Identify the Root Cause
+↓
+Fix the Code or the Test
+↓
+Run Tests Again
+
 
 
