@@ -5,7 +5,7 @@ Topic:
 Running Multiple Tests with pytest
 """
 
-""" 
+
 def add(a, b):
     return a + b
 
@@ -19,4 +19,4 @@ def test_add_zero():
 
 
 def test_add_negative_numbers():
-    assert add(-2, -3) == -6 """
+    assert add(-2, -3) == -6

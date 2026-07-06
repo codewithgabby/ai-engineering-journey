@@ -890,7 +890,46 @@ Identify the Root Cause
 ↓
 Fix the Code or the Test
 ↓
-Run Tests Again
+Run Tests Again  
+
+#################################################  
+
+## Day 19 — June 11, 2026
+
+### Parameterized Testing and the DRY Principle
+
+Today's lesson helped me understand one of the most practical features of pytest: parameterized testing.
+
+At first, I thought it was simply another pytest feature, but I realized it is actually an application of a much bigger software engineering principle: DRY (Don't Repeat Yourself).
+
+I learned that many tests use exactly the same logic and differ only in their input values and expected outputs. Instead of creating many nearly identical test functions, pytest allows one reusable test to execute automatically with multiple datasets.
+
+One important realization today was that parameterized testing is not just about writing less code. It is about improving maintainability. If the testing logic ever changes, I only need to update one test function instead of many duplicated ones.
+
+I also learned to think beyond small classroom examples. I asked what would happen if a project contained thousands of test cases instead of only five. This helped me understand that pytest is designed for large production systems and provides summarized output rather than overwhelming developers with thousands of individual test results.
+
+Another important lesson was recognizing that professional engineers constantly look for patterns they can reuse. Before writing new code, they ask whether the logic already exists and whether duplication can be avoided.
+
+Today's lesson reinforced that software engineering is not only about making programs work. It is also about designing solutions that remain clean, scalable, and maintainable as projects grow.
+
+### Mental Model
+
+One Test
+↓
+
+Many Datasets
+↓
+
+Many Independent Test Executions
+↓
+
+Less Duplication
+↓
+
+Easier Maintenance
+↓
+
+Scalable Testing
 
 
 
