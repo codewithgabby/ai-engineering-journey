@@ -931,5 +931,60 @@ Easier Maintenance
 
 Scalable Testing
 
+#################################################  
+
+## Day 20 — June 12, 2026
+
+### Engineering Review – Testing and Debugging Mindset
+
+Today was a review day, and instead of learning a completely new topic, I spent time connecting everything I learned throughout Week 4.
+
+Looking back, I realized that this week was not really about learning pytest syntax. It was about learning why professional backend teams rely on automated testing and how testing supports confident software development.
+
+One of the biggest lessons today was understanding that a failing test is not something to fear. A failed test is valuable information that helps engineers locate problems before software reaches production.
+
+I also reflected on parameterized testing and the DRY principle. I now understand that professional engineers constantly look for repeated patterns and replace duplicated logic with reusable solutions. This idea applies not only to testing but also to backend architecture and software design in general.
+
+Another important lesson today was strengthening my debugging mindset. Instead of immediately assuming where the bug is, I learned to begin with questions:
+
+- What changed?
+- What depends on that change?
+- Is there shared code?
+- What evidence supports my hypothesis?
+
+This way of thinking encourages investigation before modification and reduces the risk of introducing new bugs.
+
+One of the discussions that stood out to me today was thinking about what happens when an unrelated test suddenly fails after modifying another part of the system. I realized that this does not automatically mean the failed feature is broken. It may indicate shared dependencies or unintended side effects, which require proper root cause analysis.
+
+By the end of today's class, I felt that I was no longer learning isolated Python concepts. I was beginning to connect testing, debugging, architecture, and systems thinking into one complete engineering workflow.
+
+### Mental Model
+
+Change Code
+
+↓
+
+Run Automated Tests
+
+↓
+
+Analyze Results
+
+↓
+
+Investigate Root Cause
+
+↓
+
+Fix the Problem
+
+↓
+
+Run Tests Again
+
+↓
+
+Deploy With Confidence
+
 
 

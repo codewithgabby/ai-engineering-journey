@@ -462,9 +462,13 @@ TOOLS WE WILL USE THROUGHOUT THE YEAR
 You should install/update:
 
 Core Tools
+
 Python 3.12+
 VS Code
 Git
+Virtual Environments (venv)
+pip
+pytest
 Docker Desktop
 PostgreSQL
 pgAdmin
@@ -781,22 +785,68 @@ Focus:
 # WEEK 4 PLAN (JUNE 8 → JUNE 12)
 
 Theme:
-"Professional Backend Development Practices"
+"Professional Backend Testing and Development Practices"
+
+Status:
+
+COMPLETED
+
+Topics:
+
+* testing mindset
+* pytest fundamentals
+* virtual environments
+* package management
+* automated testing
+* AssertionError
+* reading failure reports
+* multiple test execution
+* parameterized testing
+* DRY principle
+* root cause analysis
+* debugging mindset
+* backend quality engineering
+* production testing workflow
+
+Implementation:
+
+* test_addition.py
+* test_multiple_tests.py
+* test_pytest_failures.py
+* test_parameterized_tests.py
+
+# WEEK 5 PLAN (JUNE 15 → JUNE 19)
+
+Theme:
+
+"Professional Testing and Code Quality"
 
 Status:
 
 COMING NEXT
 
-Topics will include:
+Topics:
 
-* testing fundamentals
-* pytest
-* mocking
-* backend debugging
-* code quality
-* clean coding practices
-* backend maintainability
-* engineering best practices
+* test fixtures
+* pytest fixtures
+* reusable setup code
+* setup vs teardown
+* mocking fundamentals
+* code coverage
+* professional debugging workflow
+* clean testing practices
+* maintainable test architecture
+* backend quality engineering
 
+Implementation:
+
+* fixture_experiments.py
+* mocking_experiments.py
+* reusable_test_setup.py
+* professional_backend_test_suite.py
+
+Goal:
+
+Build maintainable, reusable, and scalable automated tests using professional engineering practices.
 
 

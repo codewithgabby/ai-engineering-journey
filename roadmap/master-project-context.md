@@ -496,11 +496,11 @@ Topics learned:
 
 ## Current Week
 
-Week 3 — Production Foundations (COMPLETED)
+Week 4 — Professional Backend Development (COMPLETED)
 
 Next Week:
 
-Week 4 — Professional Python and Backend Foundations
+Week 5 — Professional Backend Testing and Quality Engineering
 
 ---
 
@@ -675,6 +675,88 @@ Topics learned:
 * backend system integration
 * AI system architecture parallels
 
+---
+
+## Day 16 Completed — June 8, 2026
+
+Topics learned:
+
+* software testing fundamentals
+* testing mindset
+* normal test cases
+* edge test cases
+* defensive testing
+* backend reliability
+* production confidence
+* testing business logic
+* automated testing principles
+* engineering quality assurance
+
+---
+
+## Day 17 Completed — June 9, 2026
+
+Topics learned:
+
+* Python virtual environments (venv)
+* package management with pip
+* pytest installation
+* project isolation
+* pip list
+* automated testing setup
+* writing first pytest tests
+* PASS vs FAIL
+* testing workflow
+* professional Python development environment
+
+---
+
+## Day 18 Completed — June 10, 2026
+
+Topics learned:
+
+* AssertionError
+* reading pytest failure reports
+* interpreting expected vs actual values
+* multiple test functions
+* pytest test discovery
+* debugging failed tests
+* execution reasoning
+* backend debugging workflow
+* automated verification
+
+---
+
+## Day 19 Completed — June 11, 2026
+
+Topics learned:
+
+* parameterized testing
+* @pytest.mark.parametrize
+* DRY principle
+* reusable test logic
+* scalable automated testing
+* multiple datasets
+* maintainable test suites
+* engineering scalability
+* backend quality assurance
+
+---
+
+## Day 20 Completed — June 12, 2026
+
+Topics learned:
+
+* engineering review
+* automated testing review
+* debugging mindset
+* root cause analysis
+* shared dependencies
+* backend quality engineering
+* production testing workflow
+* deployment confidence
+* engineering investigation mindset
+
 
 # Current Files Created
 
@@ -708,20 +790,33 @@ phase-1-backend-mastery/
 │       ├── clean-backend-architecture.md
 │       └── engineering-review-and-architecture-thinking.md
 │
-└── week-3-production-foundations/
-├── experiments/
-│   ├── dependency_injection_experiments.py
-│   ├── context_manager_experiments.py
-│   ├── exception_handling_experiments.py
-│   └── logging_experiments.py
+├── week-3-production-foundations/
+│   ├── experiments/
+│   │   ├── dependency_injection_experiments.py
+│   │   ├── context_manager_experiments.py
+│   │   ├── exception_handling_experiments.py
+│   │   └── logging_experiments.py
+│   │
+│   └── notes/
+│       ├── dependency-injection-and-scalable-backends.md
+│       ├── context-managers-and-resource-management.md
+│       ├── engineering-review-and-production-foundations.md
+│       ├── error-handling-and-custom-exceptions.md
+│       └── logging-and-observability-foundations.md
 │
-└── notes/
-├── dependency-injection-and-scalable-backends.md
-├── context-managers-and-resource-management.md
-├── exception-handling-and-custom-exceptions.md
-├── logging-and-observability-foundations.md
-└── engineering-review-and-production-foundations.md
-
+└── week-4-professional-backend-development/
+    ├── experiments/
+    │   ├── test_addition.py
+    │   ├── test_multiple_tests.py
+    │   ├── test_parameterized_tests.py
+    │   └── test_pytest_failures.py
+    │
+    └── notes/
+        ├── testing-mindset-and-engineering-thinking.md
+        ├── introduction-to-pytest-and-automated-testing.md
+        ├── reading-pytest-failures-and-multiple-tests.md
+        ├── parameterized-testing-and-dry-principle.md
+        └── engineering-review-testing-and-debugging-mindset.md
 
 Global Notes:
 notes/
