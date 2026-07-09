@@ -986,5 +986,23 @@ Run Tests Again
 
 Deploy With Confidence
 
+#################################################  
+
+## Day 21 — June 15, 2026 (Monday)
+
+Today I started Week 5, which focuses on professional testing and code quality.
+
+The biggest lesson today was understanding pytest fixtures. At first, I thought a fixture was just another function, but I learned that pytest treats it specially. It automatically runs the fixture, receives the returned object, and injects it into the test function without me calling it directly.
+
+One of the most important concepts I learned today was **test isolation**. I initially thought pytest might create one object and share it across all tests, but I discovered that it creates a fresh object for each test by default. This prevents one test from accidentally affecting another, making automated tests more reliable and predictable.
+
+Another interesting discovery was pytest's test discovery system. My first fixture file wasn't executed because it didn't begin with `test_`. After renaming the file to `test_fixture_experiments.py`, pytest immediately discovered and executed both tests successfully.
+
+I also learned that pytest captures print statements by default. Running `pytest` hid my `print()` output, while running `pytest -s` displayed the fixture execution, allowing me to clearly see that the fixture was executed before each test.
+
+Today's lesson also helped me connect several topics from previous weeks. I realized that fixtures are another form of dependency injection, but instead of injecting dependencies into an application, pytest injects prepared objects into tests. This showed me how different backend engineering concepts are connected rather than being isolated topics.
+
+Overall, today's class strengthened my understanding of automated testing, backend maintainability, and professional engineering practices. I'm beginning to see how testing frameworks are designed to support large, scalable projects with thousands of tests.
+
 
 
