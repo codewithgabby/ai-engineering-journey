@@ -1004,5 +1004,19 @@ Today's lesson also helped me connect several topics from previous weeks. I real
 
 Overall, today's class strengthened my understanding of automated testing, backend maintainability, and professional engineering practices. I'm beginning to see how testing frameworks are designed to support large, scalable projects with thousands of tests.
 
+#################################################  
+
+## Day 22 — June 16, 2026 (Tuesday)
+
+Today I continued Week 5 by learning about fixture scopes in pytest. Yesterday I learned that pytest creates a fresh fixture for every test, but today I discovered that this default behavior is not always the most efficient approach for large backend projects.
+
+I learned that pytest provides different fixture scopes, including function, class, module, and session. Each scope controls how often a fixture is created and reused. The lesson focused on understanding that fixture scope is an engineering decision rather than something to memorize.
+
+One of the biggest ideas today was the trade-off between performance and test isolation. Smaller scopes, such as function scope, provide better isolation because each test receives a fresh object. Larger scopes, such as module or session scope, improve performance by sharing resources, but they also increase the risk of shared mutable state causing tests to affect one another.
+
+I also connected today's lesson with concepts from previous weeks. The discussion about shared dictionaries reminded me of Python mutable objects from Week 1, while fixture injection continued reinforcing dependency injection concepts from Week 3. This showed me that many backend engineering ideas are interconnected rather than isolated topics.
+
+Although fixture scopes are not the most exciting topic, I now understand why they matter in production systems. Large engineering teams must constantly balance correctness, maintainability, and performance when designing automated test suites. This lesson strengthened my understanding of how professional backend engineers make those decisions.
+
 
 
