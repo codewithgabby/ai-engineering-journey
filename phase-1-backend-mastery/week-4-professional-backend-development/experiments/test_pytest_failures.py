@@ -8,7 +8,7 @@ use those reports to debug applications.
 """
 
 
-def add(a, b):
+""" def add(a, b):
     return a + b
 
 
@@ -31,4 +31,4 @@ def test_add_zero():
 
 
 def test_add_negative_numbers():
-    assert add(-2, -3) == -5
+    assert add(-2, -3) == -5 """

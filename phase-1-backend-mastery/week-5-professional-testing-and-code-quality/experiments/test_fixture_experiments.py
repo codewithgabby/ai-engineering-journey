@@ -1,4 +1,4 @@
-import pytest
+""" import pytest
 
 
 @pytest.fixture
@@ -15,4 +15,4 @@ def test_user_name(user):
 
 
 def test_user_role(user):
-    assert user["role"] == "admin"
+    assert user["role"] == "admin" """

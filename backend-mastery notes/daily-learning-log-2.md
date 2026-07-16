@@ -579,5 +579,19 @@ I also connected today's lesson with concepts from previous weeks. The discussio
 
 Although fixture scopes are not the most exciting topic, I now understand why they matter in production systems. Large engineering teams must constantly balance correctness, maintainability, and performance when designing automated test suites. This lesson strengthened my understanding of how professional backend engineers make those decisions.
 
+################################################# 
+
+## Day 23 — June 17, 2026 (Wednesday)
+
+Today's lesson focused on one of the most practical pytest concepts so far: yield fixtures. I learned that a fixture can perform both setup and cleanup automatically by using the `yield` keyword instead of `return`.
+
+One of the biggest realizations today was that yield fixtures are very similar to Python context managers that I learned during Week 3. Both approaches manage the complete lifecycle of a resource by preparing it before use and cleaning it up automatically afterward.
+
+Through several experiments, I observed the difference between function scope and module scope. With the default function scope, pytest created a new fixture for every test, performed the setup, ran the test, and immediately executed the cleanup. After changing the fixture to module scope, I saw that pytest created the fixture only once, shared it between both tests, and delayed the cleanup until every test in the module had completed.
+
+I also completed my first production-style testing experiment by replacing a simple dictionary fixture with a simulated database connection. This helped me understand how FastAPI applications manage database sessions during automated testing. The pattern of connecting before the test, yielding the resource, and closing it afterward now makes much more sense.
+
+Today's lesson also reinforced that automated testing is not just about assertions. It is equally important to think about the lifecycle of resources, proper cleanup, performance, and preventing resource leaks. I can now see how pytest fixtures, dependency injection, and context managers all work together to support clean and maintainable backend systems.
+
 
 

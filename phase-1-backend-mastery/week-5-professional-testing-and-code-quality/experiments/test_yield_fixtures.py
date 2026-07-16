@@ -3,14 +3,17 @@
 
 @pytest.fixture(scope="module")
 def user():
-    print("\nCreating user...")
-    return {
+    print("\nSetting up user...")
+
+    yield {
         "name": "Gabby",
         "role": "admin"
     }
 
+    print("Cleaning up user...")
 
-def test_name(user):
+
+def test_username(user):
     assert user["name"] == "Gabby"
 
 
