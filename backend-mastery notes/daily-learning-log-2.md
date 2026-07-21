@@ -593,5 +593,19 @@ I also completed my first production-style testing experiment by replacing a sim
 
 Today's lesson also reinforced that automated testing is not just about assertions. It is equally important to think about the lifecycle of resources, proper cleanup, performance, and preventing resource leaks. I can now see how pytest fixtures, dependency injection, and context managers all work together to support clean and maintainable backend systems.
 
+################################################# 
+
+## Day 24 — June 18, 2026 (Thursday)
+
+Today's lesson introduced mocking, one of the most important concepts in professional backend testing. I learned that unit tests should focus on verifying my application's logic rather than depending on external services.
+
+Using `MagicMock`, I created a fake payment gateway and configured it to return different responses without making any real API calls. This allowed me to test both successful and failed payment scenarios using the same business logic.
+
+One important realization today was that the business logic did not need to change. Only the mocked response changed, making it possible to verify multiple scenarios safely and quickly.
+
+During the lesson, I also encountered a `NameError` because I created a new test file without importing `MagicMock`. By reading the traceback carefully, I identified the missing import and fixed the issue. This reinforced the importance of debugging methodically instead of guessing.
+
+I now understand that mocking is essential when testing integrations with payment gateways, email services, databases, and AI APIs because it keeps tests fast, predictable, and independent of external systems.
+
 
 
