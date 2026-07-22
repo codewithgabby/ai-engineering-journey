@@ -496,11 +496,11 @@ Topics learned:
 
 ## Current Week
 
-Week 4 — Professional Backend Development (COMPLETED)
+Week 5 — Professional Backend Testing and Quality Engineering (COMPLETED)
 
 Next Week:
 
-Week 5 — Professional Backend Testing and Quality Engineering
+Week 6 — Database Engineering with PostgreSQL and SQLAlchemy
 
 ---
 
@@ -757,6 +757,85 @@ Topics learned:
 * deployment confidence
 * engineering investigation mindset
 
+## Day 21 Completed — June 15, 2026
+
+Topics learned:
+
+* pytest fixtures
+* reusable test setup
+* fixture injection
+* shared test resources
+* reducing duplicated setup code
+* cleaner test architecture
+* backend testing organization
+* dependency preparation
+* scalable test design
+
+---
+
+## Day 22 Completed — June 16, 2026
+
+Topics learned:
+
+* fixture scopes
+* function scope
+* module scope
+* class scope
+* session scope
+* fixture lifecycle
+* test isolation
+* performance optimization
+* backend resource sharing
+
+---
+
+## Day 23 Completed — June 17, 2026
+
+Topics learned:
+
+* yield fixtures
+* setup and cleanup lifecycle
+* automatic resource management
+* database session cleanup
+* context manager parallels
+* backend resource safety
+* deterministic cleanup
+* production resource lifecycle
+
+---
+
+## Day 24 Completed — June 18, 2026
+
+Topics learned:
+
+* mocking fundamentals
+* MagicMock
+* mocking external APIs
+* testing business logic
+* dependency isolation
+* fake payment gateways
+* configurable mock responses
+* backend testing without external services
+* debugging missing imports
+
+---
+
+## Day 25 Completed — June 19, 2026
+
+Topics learned:
+
+* engineering review
+* pytest review
+* fixtures review
+* fixture scope review
+* yield fixture review
+* mocking review
+* structured API responses
+* backend debugging
+* KeyError vs AssertionError
+* production testing workflow
+* backend engineering mindset
+
 
 # Current Files Created
 
@@ -805,18 +884,33 @@ phase-1-backend-mastery/
 │       └── logging-and-observability-foundations.md
 │
 └── week-4-professional-backend-development/
-    ├── experiments/
-    │   ├── test_addition.py
-    │   ├── test_multiple_tests.py
-    │   ├── test_parameterized_tests.py
-    │   └── test_pytest_failures.py
-    │
-    └── notes/
-        ├── testing-mindset-and-engineering-thinking.md
-        ├── introduction-to-pytest-and-automated-testing.md
-        ├── reading-pytest-failures-and-multiple-tests.md
-        ├── parameterized-testing-and-dry-principle.md
-        └── engineering-review-testing-and-debugging-mindset.md
+|    ├── experiments/
+|    │   ├── test_addition.py
+|    │   ├── test_multiple_tests.py
+|    │   ├── test_parameterized_tests.py
+|    │   └── test_pytest_failures.py
+|    │
+|    └── notes/
+|        ├── testing-mindset-and-engineering-thinking.md
+|        ├── introduction-to-pytest-and-automated-testing.md
+|        ├── reading-pytest-failures-and-multiple-tests.md
+|        ├── parameterized-testing-and-dry-principle.md
+|        └── engineering-review-testing-and-debugging-mindset.md
+|
+├── week-5-professional-testing-and-code-quality/
+│   ├── experiments/
+│   │   ├── test_fixtures.py
+│   │   ├── test_fixture_scopes.py
+│   │   ├── test_yield_fixtures.py
+│   │   ├── test_first_mock.py
+│   │   └── test_subscription_service.py
+│   │
+│   └── notes/
+│       ├── pytest-fixtures.md
+│       ├── fixture-scopes.md
+│       ├── yield-fixtures-and-resource-cleanup.md
+│       ├── mocking-fundamentals.md
+│       └── week-5-engineering-review.md
 
 Global Notes:
 notes/

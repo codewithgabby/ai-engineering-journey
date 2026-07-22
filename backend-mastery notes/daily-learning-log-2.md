@@ -607,5 +607,21 @@ During the lesson, I also encountered a `NameError` because I created a new test
 
 I now understand that mocking is essential when testing integrations with payment gateways, email services, databases, and AI APIs because it keeps tests fast, predictable, and independent of external systems.
 
+################################################# 
+
+## Day 25 — June 19, 2026 (Friday)
+
+Today marked the completion of Week 5: Professional Testing and Code Quality. Rather than introducing new concepts, today's class focused on connecting everything learned throughout the week into a complete backend testing workflow.
+
+One of the biggest lessons today was understanding how the different testing tools complement one another. Pytest provides the testing framework, fixtures manage reusable setup, yield fixtures handle resource cleanup, fixture scopes control resource lifecycles, and mocking isolates external dependencies from the application's business logic.
+
+I also reinforced why backend services typically return structured dictionaries instead of simple strings. Structured responses allow APIs to communicate additional information such as success status, messages, transaction references, amounts, and other metadata that frontend applications and other services can consume.
+
+During today's review, I practiced reasoning about runtime errors and assertion failures before executing code. I also reviewed common debugging scenarios involving `NameError`, `KeyError`, and `AssertionError`, improving my ability to interpret Python tracebacks and identify root causes efficiently.
+
+Completing Week 5 has given me a much stronger understanding of professional testing practices. I now appreciate that effective testing is not only about writing assertions but also about designing code that is maintainable, testable, and independent of external systems.
+
+This concludes Week 5 of my Backend Engineering Mastery roadmap and prepares me to begin Week 6, where I will focus on PostgreSQL, SQLAlchemy, and production database engineering.
+
 
 
