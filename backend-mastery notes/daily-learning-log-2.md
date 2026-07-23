@@ -623,5 +623,21 @@ Completing Week 5 has given me a much stronger understanding of professional tes
 
 This concludes Week 5 of my Backend Engineering Mastery roadmap and prepares me to begin Week 6, where I will focus on PostgreSQL, SQLAlchemy, and production database engineering.
 
+################################################# 
+
+## Day 26 — June 22, 2026 (Monday)
+
+Today marked the beginning of Week 6: Database Engineering with PostgreSQL and SQLAlchemy. Rather than jumping directly into code, I focused on building a strong mental model of how databases fit into backend systems.
+
+I learned why Python variables cannot be used for permanent business data and why relational databases such as PostgreSQL are essential for storing information that must persist even after an application stops running.
+
+I also learned the three core building blocks of a relational database: tables, columns, and rows. Tables store one type of information, columns define the attributes of each record, and rows represent individual records. I connected these concepts to Python classes and object attributes, which helped me understand how SQLAlchemy will later map Python objects to database tables.
+
+Another important concept was CRUD (Create, Read, Update, Delete) and how each operation maps directly to SQL commands: INSERT, SELECT, UPDATE, and DELETE. I also saw how these database operations correspond to REST API endpoints in FastAPI, reinforcing the connection between backend architecture and database engineering.
+
+One of the biggest realizations today was that everything learned over the past several weeks—clean architecture, dependency injection, repositories, and testing—was preparing me for the database layer. The repository pattern now has a concrete purpose: communicating with PostgreSQL.
+
+Today's lesson focused on understanding the "why" behind databases. Beginning tomorrow, I will start working with SQLAlchemy and PostgreSQL in code, building on the strong conceptual foundation established today.
+
 
 
