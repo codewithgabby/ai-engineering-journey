@@ -639,5 +639,67 @@ One of the biggest realizations today was that everything learned over the past 
 
 Today's lesson focused on understanding the "why" behind databases. Beginning tomorrow, I will start working with SQLAlchemy and PostgreSQL in code, building on the strong conceptual foundation established today.
 
+################################################# 
+
+# Day 27 — June 23, 2026
+
+## Topic
+
+SQLAlchemy Engine & First PostgreSQL Connection
+
+---
+
+## What I Learned
+
+Today marked the transition from theory to hands-on backend engineering.
+
+I created a dedicated practice project called `database-lab` instead of using Saleszy so I could experiment freely without affecting a production-style application.
+
+I learned that SQLAlchemy's Engine is not an active database connection. It is an object that stores the information required to communicate with PostgreSQL when a query is eventually executed.
+
+I also learned how a PostgreSQL connection string is structured and what each component represents, including the database type, driver, username, password, host, port, and database name.
+
+---
+
+## Practical Work Completed
+
+- Created a new FastAPI project
+- Created a virtual environment
+- Installed SQLAlchemy
+- Installed psycopg
+- Installed Alembic
+- Created a PostgreSQL database named `database_lab`
+- Built the first `database.py`
+- Created the first SQLAlchemy Engine
+- Connected FastAPI to the Engine
+- Successfully ran the application
+
+---
+
+## Biggest Insight
+
+Creating an Engine does not mean Python is already connected to PostgreSQL.
+
+The Engine simply knows how to establish a connection when SQLAlchemy needs one.
+
+---
+
+## Challenges
+
+Initially, I assumed stopping PostgreSQL would immediately break the application because the Engine would disconnect.
+
+I now understand that the Engine does not establish a database connection until a database operation actually occurs.
+
+---
+
+## Next Session
+
+- Learn SQLAlchemy Sessions
+- Execute the first real database connection
+- Understand lazy connections
+- Create the first Product model
+- Create the first database table
+- Inspect the table inside pgAdmin
+
 
 
