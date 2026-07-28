@@ -701,5 +701,80 @@ I now understand that the Engine does not establish a database connection until 
 - Create the first database table
 - Inspect the table inside pgAdmin
 
+#################################################  
+
+# Day 28 — June 24, 2026
+
+## Topic
+
+SQLAlchemy Engine, Connections & First Database Table
+
+---
+
+## What I Learned
+
+Today I moved beyond creating an SQLAlchemy Engine and learned how SQLAlchemy actually communicates with PostgreSQL.
+
+I learned that creating an Engine does not immediately connect to the database. The Engine simply stores the information required to establish a connection when SQLAlchemy needs one.
+
+I opened my first real database connection using engine.connect() and successfully executed my first SQL statement from Python.
+
+I also created my first SQLAlchemy model (Product) and learned that defining a model does not automatically create a table.
+
+Using Base.metadata.create_all(bind=engine), SQLAlchemy generated my first PostgreSQL table from my Python class.
+
+Seeing the products table appear in pgAdmin helped me connect the relationship between Python models and database tables.
+
+---
+
+## Practical Work Completed
+
+- Connected FastAPI to PostgreSQL
+- Opened a real SQLAlchemy Connection
+- Executed raw SQL from Python
+- Retrieved PostgreSQL version
+- Created Product model
+- Generated products table automatically
+- Verified table inside pgAdmin
+
+---
+
+## Biggest Insight
+
+An Engine is not an active database connection.
+
+A Connection is opened only when SQLAlchemy needs to communicate with PostgreSQL.
+
+A SQLAlchemy Model is only a blueprint until create_all() builds the actual table.
+
+---
+
+## Challenges
+
+Initially I thought creating an Engine immediately established a connection.
+
+After today's experiments I now understand SQLAlchemy's lazy connection behavior.
+
+---
+
+## Engineering Milestone
+
+Today I created my first PostgreSQL table entirely from Python code without manually creating it inside pgAdmin.
+
+This was my first complete ORM workflow.
+
+---
+
+## Next Session
+
+- SQLAlchemy Sessions
+- Transactions
+- session.add()
+- session.commit()
+- session.refresh()
+- Insert first Product
+- View records in pgAdmin
+- Query products from PostgreSQL
+
 
 
