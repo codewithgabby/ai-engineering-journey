@@ -403,11 +403,13 @@ Stores:
 
 ---
 
-# Current Progress (IMPORTANT)
-
 ## Current Phase
 
 Phase 1 — Backend Engineering Mastery
+
+**Status:** IN PROGRESS
+
+**Current Focus:** Week 6 — Database Engineering with PostgreSQL and SQLAlchemy
 
 ---
 
@@ -496,11 +498,57 @@ Topics learned:
 
 ## Current Week
 
-Week 5 — Professional Backend Testing and Quality Engineering (COMPLETED)
-
-Next Week:
-
 Week 6 — Database Engineering with PostgreSQL and SQLAlchemy
+
+**Status:** IN PROGRESS
+
+Topics currently covered:
+
+\* PostgreSQL fundamentals
+
+\* pgAdmin
+
+\* SQLAlchemy ORM
+
+\* SQLAlchemy models
+
+\* database engines
+
+\* PostgreSQL connections
+
+\* SQLAlchemy Sessions
+
+\* transactions
+
+\* INSERT operations
+
+\* READ operations
+
+\* filtering
+
+\* sorting
+
+\* limiting results
+
+Next lessons will continue with:
+
+\* UPDATE operations
+
+\* DELETE operations
+
+\* transaction rollback
+
+\* database constraints
+
+\* relationships
+
+\* SQLAlchemy relationships
+
+\* more advanced querying
+
+\* pagination
+
+\* database-backed FastAPI architecture
 
 ---
 
@@ -836,86 +884,279 @@ Topics learned:
 * production testing workflow
 * backend engineering mindset
 
+---
+
+## Day 26 Completed — June 22, 2026
+
+Topics learned:
+
+\* PostgreSQL fundamentals
+
+\* relational databases
+
+\* tables, rows, and columns
+
+\* primary keys
+
+\* SQL vs database systems
+
+\* PostgreSQL architecture
+
+\* pgAdmin
+
+\* connecting Python applications to PostgreSQL
+
+\* database engineering mindset
+
+\* database-backed backend systems
+
+---
+
+## Day 27 Completed — June 23, 2026
+
+Topics learned:
+
+\* SQLAlchemy ORM fundamentals
+
+\* DeclarativeBase
+
+\* Base models
+
+\* SQLAlchemy models
+
+\* mapped columns
+
+\* primary keys in ORM models
+
+\* Python objects mapped to database tables
+
+\* ORM mental models
+
+\* PostgreSQL + SQLAlchemy architecture
+
+---
+
+## Day 28 Completed — June 24, 2026
+
+Topics learned:
+
+\* SQLAlchemy Engine
+
+\* database connection configuration
+
+\* PostgreSQL connection strings
+
+\* psycopg
+
+\* engine creation
+
+\* testing database connectivity
+
+\* Base.metadata.create_all()
+
+\* database availability
+
+\* connection failure reasoning
+
+\* Python → SQLAlchemy → PostgreSQL architecture
+
+---
+
+## Day 29 Completed — June 25, 2026
+
+Topics learned:
+
+\* SQLAlchemy Sessions
+
+\* SessionLocal
+
+\* session lifecycle
+
+\* session.add()
+
+\* session.commit()
+
+\* session.refresh()
+
+\* session.close()
+
+\* transactions
+
+\* ORM INSERT operations
+
+\* database persistence
+
+\* staging vs commit mental model
+
+\* debugging Python environment and package installation
+
+\* Python module execution using `python -m`
+
+\* backend database workflow
+
+---
+
+## Day 30 Completed — June 26, 2026
+
+Topics learned:
+
+\* SQLAlchemy READ operations
+
+\* session.query()
+
+\* .all()
+
+\* .first()
+
+\* .filter()
+
+\* filtering by ID
+
+\* filtering by name
+
+\* multiple filter conditions
+
+\* handling None from missing records
+
+\* defensive database programming
+
+\* .order_by()
+
+\* ascending sorting
+
+\* descending sorting with desc()
+
+\* .limit()
+
+\* database-side filtering
+
+\* database-side sorting
+
+\* database-side result limiting
+
+\* efficient data retrieval
+
+\* database query thinking
+
+\* FastAPI database endpoint connections
+
 
 # Current Files Created
 
-```text
-phase-1-backend-mastery/
-├── week-1-python-internals/
-│   ├── experiments/
-│   │   ├── memory_experiments.py
-│   │   ├── decorator_experiments.py
-│   │   ├── generator_experiments.py
-│   │   └── async_experiments.py
-│   │
-│   └── notes/
-│       ├── python-memory.md
-│       ├── functions-and-decorators.md
-│       ├── iterators-and-generators.md
-│       ├── async-python.md
-│       └── engineering-review-and-systems-thinking.md
+ai-engineering-journey/
 │
-├── week-2-engineering-structure/
-│   ├── experiments/
-│   │   ├── typing_experiments.py
-│   │   ├── oop_experiments.py
-│   │   ├── inheritance_experiments.py
-│   │   └── architecture_experiments.py
+├── phase-1-backend-mastery/
 │   │
-│   └── notes/
-│       ├── type-hinting-and-professional-functions.md
-│       ├── oop-and-backend-system-design.md
-│       ├── inheritance-and-composition.md
-│       ├── clean-backend-architecture.md
-│       └── engineering-review-and-architecture-thinking.md
+│   ├── week-1-python-internals/
+│   │   ├── experiments/
+│   │   │   ├── memory_experiments.py
+│   │   │   ├── decorator_experiments.py
+│   │   │   ├── generator_experiments.py
+│   │   │   └── async_experiments.py
+│   │   │
+│   │   └── notes/
+│   │       ├── python-memory.md
+│   │       ├── functions-and-decorators.md
+│   │       ├── iterators-and-generators.md
+│   │       ├── async-python.md
+│   │       └── engineering-review-and-systems-thinking.md
+│   │
+│   ├── week-2-engineering-structure/
+│   │   ├── experiments/
+│   │   │   ├── typing_experiments.py
+│   │   │   ├── oop_experiments.py
+│   │   │   ├── inheritance_experiments.py
+│   │   │   └── architecture_experiments.py
+│   │   │
+│   │   └── notes/
+│   │       ├── type-hinting-and-professional-functions.md
+│   │       ├── oop-and-backend-system-design.md
+│   │       ├── inheritance-and-composition.md
+│   │       ├── clean-backend-architecture.md
+│   │       └── engineering-review-and-architecture-thinking.md
+│   │
+│   ├── week-3-production-foundations/
+│   │   ├── experiments/
+│   │   │   ├── dependency_injection_experiments.py
+│   │   │   ├── context_manager_experiments.py
+│   │   │   ├── exception_handling_experiments.py
+│   │   │   └── logging_experiments.py
+│   │   │
+│   │   └── notes/
+│   │       ├── dependency-injection-and-scalable-backends.md
+│   │       ├── context-managers-and-resource-management.md
+│   │       ├── engineering-review-and-production-foundations.md
+│   │       ├── error-handling-and-custom-exceptions.md
+│   │       └── logging-and-observability-foundations.md
+│   │
+│   ├── week-4-professional-backend-development/
+│   │   ├── experiments/
+│   │   │   ├── test_addition.py
+│   │   │   ├── test_multiple_tests.py
+│   │   │   ├── test_parameterized_tests.py
+│   │   │   └── test_pytest_failures.py
+│   │   │
+│   │   └── notes/
+│   │       ├── testing-mindset-and-engineering-thinking.md
+│   │       ├── introduction-to-pytest-and-automated-testing.md
+│   │       ├── reading-pytest-failures-and-multiple-tests.md
+│   │       ├── parameterized-testing-and-dry-principle.md
+│   │       └── engineering-review-testing-and-debugging-mindset.md
+│   │
+│   ├── week-5-professional-testing-and-code-quality/
+│   │   ├── experiments/
+│   │   │   ├── test_fixtures.py
+│   │   │   ├── test_fixture_scopes.py
+│   │   │   ├── test_yield_fixtures.py
+│   │   │   ├── test_first_mock.py
+│   │   │   └── test_subscription_service.py
+│   │   │
+│   │   └── notes/
+│   │       ├── pytest-fixtures.md
+│   │       ├── fixture-scopes.md
+│   │       ├── yield-fixtures-and-resource-cleanup.md
+│   │       ├── mocking-fundamentals.md
+│   │       └── week-5-engineering-review.md
+│   │
+│   └── week-6-database-engineering/
+│       ├── experiments/
+│       │   └── [database experiments created during Week 6]
+│       │
+│       └── notes/
+│           ├── postgresql-fundamentals.md
+│           ├── sqlalchemy-models.md
+│           ├── sqlalchemy-engine-and-connections.md
+│           ├── sqlalchemy-sessions-and-transactions.md
+│           ├── sqlalchemy-insert-operations.md
+│           └── sqlalchemy-read-operations.md
 │
-├── week-3-production-foundations/
-│   ├── experiments/
-│   │   ├── dependency_injection_experiments.py
-│   │   ├── context_manager_experiments.py
-│   │   ├── exception_handling_experiments.py
-│   │   └── logging_experiments.py
+├── projects/
 │   │
-│   └── notes/
-│       ├── dependency-injection-and-scalable-backends.md
-│       ├── context-managers-and-resource-management.md
-│       ├── engineering-review-and-production-foundations.md
-│       ├── error-handling-and-custom-exceptions.md
-│       └── logging-and-observability-foundations.md
+│   └── database-lab/
+│       ├── app/
+│       │   ├── __init__.py
+│       │   ├── database.py
+│       │   ├── models.py
+│       │   ├── insert_product.py
+│       │   ├── read_products.py
+│       │   └── get_product.py
+│       │
+│       └── [other database-lab files]
 │
-└── week-4-professional-backend-development/
-|    ├── experiments/
-|    │   ├── test_addition.py
-|    │   ├── test_multiple_tests.py
-|    │   ├── test_parameterized_tests.py
-|    │   └── test_pytest_failures.py
-|    │
-|    └── notes/
-|        ├── testing-mindset-and-engineering-thinking.md
-|        ├── introduction-to-pytest-and-automated-testing.md
-|        ├── reading-pytest-failures-and-multiple-tests.md
-|        ├── parameterized-testing-and-dry-principle.md
-|        └── engineering-review-testing-and-debugging-mindset.md
-|
-├── week-5-professional-testing-and-code-quality/
-│   ├── experiments/
-│   │   ├── test_fixtures.py
-│   │   ├── test_fixture_scopes.py
-│   │   ├── test_yield_fixtures.py
-│   │   ├── test_first_mock.py
-│   │   └── test_subscription_service.py
-│   │
-│   └── notes/
-│       ├── pytest-fixtures.md
-│       ├── fixture-scopes.md
-│       ├── yield-fixtures-and-resource-cleanup.md
-│       ├── mocking-fundamentals.md
-│       └── week-5-engineering-review.md
-
-Global Notes:
-notes/
-└── daily-learning-log.md
-```
+├── architecture/
+│
+├── experiments/
+│
+├── notes/
+│   └── daily-learning-log.md
+│
+├── resources/
+│
+├── roadmap/
+│   ├── year-roadmap-2026-2027.md
+│   └── master-project-context.md
+│
+└── README.md
 
 ---
 
