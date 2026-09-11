@@ -1,4 +1,4 @@
-from sqlalchemy import String
+from sqlalchemy import CheckConstraint, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
@@ -10,6 +10,12 @@ class Product(Base):
     __tablename__ = "products"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    name: Mapped[str] = mapped_column(String(100))
+    name: Mapped[str] = mapped_column(String(100), nullable=False)
+    description: Mapped[str] = mapped_column(String(255), nullable=True)
     price: Mapped[float] = mapped_column()
     quantity: Mapped[int] = mapped_column()
+
+    __table_args__ = (
+        CheckConstraint("price >= 0", name="check_product_price_non_negative"),
+        CheckConstraint("quantity >= 0", name="check_product_quantity_non_negative"),
+    )

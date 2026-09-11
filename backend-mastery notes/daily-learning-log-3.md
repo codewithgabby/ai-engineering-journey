@@ -562,3 +562,32 @@ PostgreSQL
 
 Verify Persistent Database State
 
+##############################################################   
+
+# Day 32 — June 30, 2026
+
+# Database Migrations with Alembic
+
+Today I continued database engineering by learning how to manage database schema changes with Alembic.
+
+I started by adding database constraints to the Product model. I made the name field non-nullable and added checks to ensure that price and quantity cannot be negative.
+
+I then learned an important limitation of `Base.metadata.create_all()`. It can create tables, but it does not provide a proper migration history for an evolving production database.
+
+I initialized Alembic and configured it to use the application's DATABASE_URL from the environment file. I connected Alembic's `target_metadata` to the SQLAlchemy `Base.metadata` so that Alembic could compare my models with the actual PostgreSQL database.
+
+I generated my first migration for the product constraints and successfully applied it to PostgreSQL.
+
+After that, I added a description field to the Product model. Alembic detected the new column and generated another migration. I applied the migration successfully and confirmed that the database was at the latest migration:
+
+`c15efd429069 (head)`
+
+The biggest lesson today was understanding that database schema changes need to be tracked just like code changes. Alembic provides a history of these changes and allows the database schema to evolve in a controlled and repeatable way.
+
+Today's mental model is:
+
+SQLAlchemy Model
+→ Alembic Migration
+→ PostgreSQL Database
+
+This was my first practical introduction to database schema evolution and migration-based database management.
