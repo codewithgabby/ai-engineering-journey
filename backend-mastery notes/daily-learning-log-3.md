@@ -591,3 +591,45 @@ SQLAlchemy Model
 → PostgreSQL Database
 
 This was my first practical introduction to database schema evolution and migration-based database management.
+
+##############################################################   
+
+# Day 33 — July 1, 2026
+
+## Topic
+Database Schema Evolution, Data Backfilling, and Unique Constraints with Alembic
+
+## What I Learned
+
+Today I learned how to safely introduce a new field into an existing database using Alembic.
+
+I added a nullable `sku` field to the `Product` model because existing products did not have SKUs. I then generated and applied an Alembic migration to add the column.
+
+After the migration, I backfilled the existing products with unique SKUs:
+
+- Rice → RICE-001
+- Rice → RICE-002
+- Beans → BEANS-001
+- Oil → OIL-001
+
+Before adding the UNIQUE constraint, I checked the database for duplicate SKU values and confirmed that there were none.
+
+I then generated and applied a second migration to make `sku` unique.
+
+Finally, I tested the database constraint by attempting to create a duplicate SKU. PostgreSQL rejected it with a `UniqueViolation`, proving that the constraint was being enforced at the database level.
+
+I also confirmed that a product can still be created with `sku=None`.
+
+## Important Engineering Lesson
+
+I learned that changing a SQLAlchemy model is not the same thing as safely changing a production database.
+
+A safe schema change may require:
+
+```text
+Add nullable field
+→ migrate
+→ backfill existing data
+→ validate data
+→ add constraint
+→ test
