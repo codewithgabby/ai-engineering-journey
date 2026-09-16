@@ -1,9 +1,16 @@
-from sqlalchemy import CheckConstraint, String
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy import CheckConstraint, ForeignKey, String
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
 class Base(DeclarativeBase):
     pass
+
+
+class Category(Base):
+    __tablename__ = "categories"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str] = mapped_column(String(100), nullable=False)
 
 
 class Product(Base):
@@ -15,6 +22,8 @@ class Product(Base):
     sku: Mapped[str] = mapped_column(String(50), nullable=True, unique=True)
     price: Mapped[float] = mapped_column()
     quantity: Mapped[int] = mapped_column()
+    category_id: Mapped[int | None] = mapped_column(ForeignKey("categories.id"), nullable=True)
+    category: Mapped["Category | None"] = relationship()
 
     __table_args__ = (
         CheckConstraint("price >= 0", name="check_product_price_non_negative"),

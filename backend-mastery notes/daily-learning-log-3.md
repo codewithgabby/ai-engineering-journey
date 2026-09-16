@@ -633,3 +633,40 @@ Add nullable field
 → validate data
 → add constraint
 → test
+
+############################################################## 
+
+Daily Learning Log — Day 34
+
+Date: July 2, 2026
+Phase: Phase 1 — Backend Engineering Mastery
+Week: Week 7 — Database Engineering Continued
+Topic: Foreign Keys & Relationships
+
+Today I learned how foreign keys create relationships between tables in a relational database.
+
+I created a new Category model and connected it to the existing Product model using category_id as a foreign key. I also created and applied an Alembic migration to safely introduce the new categories table and the foreign key constraint.
+
+I learned that a foreign key ensures that a value in one table must correspond to an existing record in another table. I tested this by attempting to create a product with category_id=999, which PostgreSQL correctly rejected with a ForeignKeyViolation.
+
+I then created an actual Electronics category and successfully created a Laptop product connected to it.
+
+I also learned the difference between having a foreign key column and having an ORM relationship. The category_id column stores the actual relationship in the database, while SQLAlchemy's relationship() allows me to navigate between related Python objects, such as:
+
+product.category
+
+Finally, I tested that a product can have no category because category_id is nullable. This helped me understand how optional relationships work.
+
+Key Understanding
+
+Database relationship:
+
+products.category_id → categories.id
+
+The foreign key lives in the products table because each product stores the ID of the category it belongs to.
+
+Engineering Lesson
+
+A foreign key is not just a Python/SQLAlchemy feature. It is a database integrity mechanism. PostgreSQL itself enforces the relationship and prevents invalid references from entering the database.
+
+Day 34 completed: Foreign Keys & Relationships.
