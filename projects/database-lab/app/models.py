@@ -1,9 +1,25 @@
-from sqlalchemy import CheckConstraint, ForeignKey, String
+from sqlalchemy import CheckConstraint, ForeignKey, String, Table, Column
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
 class Base(DeclarativeBase):
     pass
+
+
+product_tags = Table(
+    "product_tags",
+    Base.metadata,
+    Column(
+        "product_id",
+        ForeignKey("products.id"),
+        primary_key=True,
+    ),
+    Column(
+        "tag_id",
+        ForeignKey("tags.id"),
+        primary_key=True,
+    ),
+)
 
 
 class Category(Base):
@@ -14,7 +30,6 @@ class Category(Base):
     products: Mapped[list["Product"]] = relationship(
         back_populates="category"
 )
-
 
 class Product(Base):
     __tablename__ = "products"
@@ -29,8 +44,26 @@ class Product(Base):
     category: Mapped["Category | None"] = relationship(
         back_populates="products"
     )
+    tags: Mapped[list["Tag"]] = relationship(
+        secondary=product_tags,
+        back_populates="products",
+    )
 
     __table_args__ = (
         CheckConstraint("price >= 0", name="check_product_price_non_negative"),
         CheckConstraint("quantity >= 0", name="check_product_quantity_non_negative"),
     )
+
+class Tag(Base):
+    __tablename__ = "tags"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str] = mapped_column(
+        String(100),
+        nullable=False
+    )
+
+    products: Mapped[list["Product"]] = relationship(
+        secondary=product_tags,
+        back_populates="tags",
+    )    

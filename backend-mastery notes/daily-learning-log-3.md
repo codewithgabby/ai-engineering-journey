@@ -693,3 +693,17 @@ I learned that:
 
 ### Engineering Lesson
 I learned how database relationships and ORM relationships work together. This is important for designing real backend systems where entities are connected, such as products and categories, users and orders, or customers and transactions.
+
+##############################################    
+
+## Day 36 — July 6, 2026
+
+Today I learned and implemented many-to-many relationships using SQLAlchemy and PostgreSQL.
+
+I created a `Product ↔ Tag` relationship using a `product_tags` association table with two foreign keys and a composite primary key.
+
+I successfully tested creating relationships, accessing them from both directions, and removing a relationship without deleting either entity.
+
+The most important lesson today was debugging. When my first test returned no tags, I checked the actual database and association table instead of assuming the relationship was broken. I discovered that my query had selected the wrong product because there were duplicate product names.
+
+**Key takeaway:** Always verify the actual database state and make sure the test itself is selecting the correct data before changing working code.
