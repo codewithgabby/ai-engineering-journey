@@ -10,8 +10,8 @@
 
 - **Phase 1 — Backend Engineering Mastery**
 - **Week 7 — Database Engineering Continued**
-- **Day 33 — Database Schema Evolution & Safe Migrations**
-- **Current Date:** September 14, 2026
+- **Day 35 — One-to-Many Relationships**
+- **Current Lesson Date:** July 3, 2026
 
 ---
 
@@ -289,17 +289,36 @@ Safe migrations
 Migration verification
 Remaining Database Work
 
-We still need to cover:
+Completed:
 
 Foreign keys
+
 Relationships
+
 One-to-many
+
+Database constraints
+
+Safe migrations
+
+Alembic schema evolution
+
+Remaining:
+
 Many-to-many
+
 Joins
+
 Indexes
+
 Query optimization
+
 EXPLAIN
+
+EXPLAIN ANALYZE
+
 Transaction/concurrency concepts
+
 Database + FastAPI integration
 
 Then we close the core database section.
@@ -1133,63 +1152,176 @@ Read operations
 Filtering
 Ordering
 Retrieving individual records
+
+---
+
 WEEK 7 — DATABASE ENGINEERING CONTINUED
 
-Status: CURRENT
+Status: COMPLETED — July 3, 2026
 
-Completed
-Schema constraints
+Topics covered:
+
+Database constraints
+
 NOT NULL
-CHECK
+
+CHECK constraints
+
 Unique constraints
-Alembic setup
+
+Alembic
+
 Migration generation
+
 Migration execution
+
 Migration history
+
 Schema evolution
-Nullable SKU introduction
-Existing-data backfill
+
+Existing-data backfilling
+
 SKU uniqueness
+
 Migration verification
+
 Database integrity testing
+
+Foreign keys
+
+Database relationships
+
+SQLAlchemy relationships
+
+back_populates
+
+One-to-many relationships
+
+Relationship assignment
+
+Moving records between categories
+
+Disassociating records from categories
+
+flush()
+
+commit()
+
+ORM relationship synchronization
+
 Current Migration Chain
+
 Base
+
   ↓
+
 c38de670e9e3
+
 add product constraints
+
   ↓
+
 c15efd429069
+
 add product description
+
   ↓
+
 ef62d1b9234a
+
 add product SKU
+
   ↓
+
 bde702294e1b
+
 make product SKU unique
+
+  ↓
+
+620c239c88a0
+
+add category foreign key
+
 Current Database State
 
-The products table now supports:
+The database now supports:
 
-Existing products without an SKU
-New products with an SKU
-Backfilled SKUs for existing records
-Unique SKU enforcement
+Product constraints
+
+Product descriptions
+
+Unique SKUs
+
+Categories
+
+Foreign key relationships
+
+One-to-many Category → Product relationships
+
+Nullable product categories
+
 Safe schema evolution through Alembic
 
-This was verified through actual database operations and integrity testing.
+Relationship changes through SQLAlchemy ORM
+
+The Week 7 database work was verified through actual PostgreSQL and SQLAlchemy operations, including migration testing, integrity testing, relationship assignment, moving products between categories, and disassociating products from categories.
 
 10. NEXT CLASSES
 
-After Day 33, the immediate sequence is:
+Week 7 is now COMPLETED.
 
-Day 34
-Foreign Keys & Relationships
-        ↓
-Day 35
-One-to-Many Relationships
-        ↓
+Day 35 — July 3, 2026 marked the completion of Week 7.
+
+The next learning sequence is:
+
 Day 36
+
 Many-to-Many Relationships
+
+        ↓
+
+Database + FastAPI Integration
+
+        ↓
+
+Authentication
+
+        ↓
+
+RBAC
+
+        ↓
+
+Redis
+
+        ↓
+
+Background Jobs
+
+        ↓
+
+Queues
+
+        ↓
+
+WebSockets
+
+        ↓
+
+Docker
+
+        ↓
+
+CI/CD
+
+        ↓
+
+Deployment
+
+        ↓
+
+Phase 1 Capstone
         ↓
 Day 37
 SQL Joins + SQLAlchemy Joins
@@ -1347,6 +1479,4 @@ The goal is not to know every technology.
 
 The goal is to become the engineer who can understand a problem, design the system, choose the right technology, build it, test it, debug it, deploy it, and continuously improve it.
 
-
-This version is ready to **replace `year-roadmap-2026-2027.md` directly**.
 ```

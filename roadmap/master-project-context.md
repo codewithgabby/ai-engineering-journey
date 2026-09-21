@@ -409,7 +409,7 @@ Phase 1 — Backend Engineering Mastery
 
 **Status:** IN PROGRESS
 
-**Current Focus:** Week 6 — Database Engineering with PostgreSQL and SQLAlchemy
+**Current Focus:** Week 7 — Database Engineering Continued: Relationships and Querying
 
 ---
 
@@ -498,57 +498,24 @@ Topics learned:
 
 ## Current Week
 
-Week 6 — Database Engineering with PostgreSQL and SQLAlchemy
+Week 7 — Database Engineering Continued
 
-**Status:** IN PROGRESS
+**Status:** COMPLETED
 
-Topics currently covered:
+Topics covered:
 
-\* PostgreSQL fundamentals
-
-\* pgAdmin
-
-\* SQLAlchemy ORM
-
-\* SQLAlchemy models
-
-\* database engines
-
-\* PostgreSQL connections
-
-\* SQLAlchemy Sessions
-
-\* transactions
-
-\* INSERT operations
-
-\* READ operations
-
-\* filtering
-
-\* sorting
-
-\* limiting results
-
-Next lessons will continue with:
-
-\* UPDATE operations
-
-\* DELETE operations
-
-\* transaction rollback
-
-\* database constraints
-
-\* relationships
-
-\* SQLAlchemy relationships
-
-\* more advanced querying
-
-\* pagination
-
-\* database-backed FastAPI architecture
+* UPDATE operations
+* DELETE operations
+* transactions and rollback
+* database constraints
+* safe schema migrations
+* Alembic
+* foreign keys
+* one-to-many relationships
+* SQLAlchemy relationships
+* relationship assignment
+* relationship synchronization
+* database integrity
 
 ---
 
@@ -1040,10 +1007,92 @@ Topics learned:
 
 \* FastAPI database endpoint connections
 
+---
+
+## Day 31 Completed — June 29, 2026
+
+Topics learned:
+
+* UPDATE operations
+* DELETE operations
+* transactions
+* rollback
+* commit vs rollback
+* flush vs commit
+* database state changes
+* safe database modifications
+
+---
+
+## Day 32 Completed — June 30, 2026
+
+Topics learned:
+
+* database constraints
+* NOT NULL
+* CHECK constraints
+* UNIQUE constraints
+* database integrity
+* enforcing business rules at database level
+
+---
+
+## Day 33 Completed — July 1, 2026
+
+Topics learned:
+
+* database schema evolution
+* Alembic migrations
+* safe schema changes
+* adding new columns
+* backfilling existing records
+* unique SKU constraints
+* migration history
+* migration verification
+* protecting database secrets
+
+---
+
+## Day 34 Completed — July 2, 2026
+
+Topics learned:
+
+* foreign keys
+* database relationships
+* Category → Product relationship
+* SQLAlchemy `relationship()`
+* `back_populates`
+* ORM relationship navigation
+* relationship assignment
+* moving products between categories
+* database integrity
+
+---
+
+## Day 35 Completed — July 3, 2026
+
+Topics learned:
+
+* one-to-many relationships
+* Category → Products
+* foreign key on the many side
+* `Category.products`
+* `Product.category`
+* `back_populates`
+* relationship assignment
+* moving products between categories
+* disassociating products with `None`
+* `flush()`
+* `commit()`
+* ORM relationship synchronization
+* relational database thinking
+
+---
 
 # Current Files Created
 
 ai-engineering-journey/
+
 │
 ├── phase-1-backend-mastery/
 │   │
@@ -1120,7 +1169,7 @@ ai-engineering-journey/
 │   │
 │   └── week-6-database-engineering/
 │       ├── experiments/
-│       │   └── [database experiments created during Week 6]
+│       │   └── [database experiments created during Weeks 6–7]
 │       │
 │       └── notes/
 │           ├── postgresql-fundamentals.md
@@ -1128,7 +1177,12 @@ ai-engineering-journey/
 │           ├── sqlalchemy-engine-and-connections.md
 │           ├── sqlalchemy-sessions-and-transactions.md
 │           ├── sqlalchemy-insert-operations.md
-│           └── sqlalchemy-read-operations.md
+│           ├── sqlalchemy-read-operations.md
+│           ├── day-31-update-delete-transactions.md
+│           ├── day-32-database-constraints.md
+│           ├── day-33-database-schema-evolution-and-safe-migrations.md
+│           ├── day-34-foreign-keys-and-relationships.md
+│           └── day-35-one-to-many-relationships.md
 │
 ├── projects/
 │   │

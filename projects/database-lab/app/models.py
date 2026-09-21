@@ -11,6 +11,9 @@ class Category(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(100), nullable=False)
+    products: Mapped[list["Product"]] = relationship(
+        back_populates="category"
+)
 
 
 class Product(Base):
@@ -23,7 +26,9 @@ class Product(Base):
     price: Mapped[float] = mapped_column()
     quantity: Mapped[int] = mapped_column()
     category_id: Mapped[int | None] = mapped_column(ForeignKey("categories.id"), nullable=True)
-    category: Mapped["Category | None"] = relationship()
+    category: Mapped["Category | None"] = relationship(
+        back_populates="products"
+    )
 
     __table_args__ = (
         CheckConstraint("price >= 0", name="check_product_price_non_negative"),

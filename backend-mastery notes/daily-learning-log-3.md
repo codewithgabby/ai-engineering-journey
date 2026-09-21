@@ -634,9 +634,9 @@ Add nullable field
 → add constraint
 → test
 
-############################################################## 
+########################################################
 
-Daily Learning Log — Day 34
+# Daily Learning Log — Day 34
 
 Date: July 2, 2026
 Phase: Phase 1 — Backend Engineering Mastery
@@ -670,3 +670,26 @@ Engineering Lesson
 A foreign key is not just a Python/SQLAlchemy feature. It is a database integrity mechanism. PostgreSQL itself enforces the relationship and prevents invalid references from entering the database.
 
 Day 34 completed: Foreign Keys & Relationships.
+
+###############################################################  
+
+## Day 35 — July 3, 2026
+
+### Topic: One-to-Many Relationships
+
+Today I learned how to model one-to-many relationships with SQLAlchemy and PostgreSQL.
+
+I learned that:
+- One Category can have many Products.
+- The foreign key (`category_id`) belongs on the many side (`Product`).
+- `relationship()` allows SQLAlchemy objects to navigate between related records.
+- `back_populates` connects both sides of the ORM relationship.
+- `product.category` accesses a product's category.
+- `category.products` accesses all products in a category.
+- A product can be moved from one category to another through the ORM relationship.
+- Setting `product.category = None` removes the product from its category when the foreign key is nullable.
+- `flush()` synchronizes pending changes with the database during the transaction.
+- `commit()` permanently saves the transaction.
+
+### Engineering Lesson
+I learned how database relationships and ORM relationships work together. This is important for designing real backend systems where entities are connected, such as products and categories, users and orders, or customers and transactions.
