@@ -1,0 +1,12 @@
+from sqlalchemy import text
+
+from app.database import SessionLocal
+
+
+db = SessionLocal()
+
+try:
+    result = db.execute(text("SELECT current_database()"))
+    print("Connected database:", result.scalar())
+finally:
+    db.close()
