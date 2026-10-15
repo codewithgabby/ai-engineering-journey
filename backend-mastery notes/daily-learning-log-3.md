@@ -825,4 +825,85 @@ Current Status
 - Product model — Complete
 - Alembic setup — Complete
 - Initial migration — Complete
-- Migration applied and verified — Complete
+- Migration applied and verified — Complete   
+
+###############################################################  
+
+## Day 39 — EXPLAIN / EXPLAIN ANALYZE
+
+**Phase:** Phase 1 — Backend Engineering Mastery  
+**Focus:** PostgreSQL Query Performance  
+**Status:** Database performance review
+
+### Learning objective
+
+Understand how PostgreSQL query plans help engineers investigate database performance and identify potentially expensive queries.
+
+### Key concepts
+
+- **EXPLAIN:** Displays the execution plan PostgreSQL intends to use for a query.
+- **EXPLAIN ANALYZE:** Executes the query and reports actual execution statistics alongside the plan.
+- **Query plan:** Describes how PostgreSQL intends to retrieve or modify data.
+- **Sequential scan:** Reads rows by scanning a table.
+- **Index scan:** Uses an index to locate relevant rows when the planner determines that doing so is appropriate.
+- **Estimated cost versus actual execution:** The planner's estimates and the observed execution results provide different kinds of performance information.
+
+### Engineering understanding
+
+Writing a SQL query that returns the correct result is only one part of database engineering. Engineers must also understand how the database executes queries and how performance changes as tables grow.
+
+For example, a query that retrieves one product may work well with a small table but become expensive as the application accumulates many records. Examining the execution plan helps investigate what PostgreSQL is doing instead of relying on guesses.
+
+### Connection to backend engineering
+
+In a FastAPI application, slow database queries can increase endpoint response times, consume database resources, and reduce the number of requests the system can handle efficiently.
+
+Understanding query plans provides a foundation for diagnosing these issues before introducing unnecessary indexes or other optimizations.
+
+### Important lesson
+
+Performance optimization should be based on evidence. An index is not automatically beneficial for every query, and an execution plan must be interpreted in the context of the query, data, and workload.
+
+### Next step
+
+Continue building the PostgreSQL-backed FastAPI application, applying database engineering knowledge to real API operations and later investigating performance where necessary.
+
+################################################################
+
+## Day 40 — Thursday, July 9, 2026
+### Topic: Database + FastAPI Integration
+
+**Objective**
+
+Connect the FastAPI application to PostgreSQL and implement a complete set of product CRUD endpoints using SQLAlchemy.
+
+**What I worked on**
+- Configured the database connection and SQLAlchemy session dependency.
+- Connected the Product model and Pydantic schemas to the API.
+- Implemented create, list, retrieve, update, and delete endpoints.
+- Used Alembic to manage the products table migration.
+- Tested the endpoints through Swagger UI.
+- Tested request validation and missing-resource handling.
+
+**Practical results**
+- Created and retrieved a Laptop product.
+- Confirmed invalid input returned HTTP 422.
+- Confirmed a nonexistent product returned HTTP 404.
+- Updated the Laptop's price to `900000` and quantity to `8`.
+- Created and deleted Test Mouse, then confirmed it could no longer be retrieved.
+- Confirmed the Laptop record remained available.
+
+**Key lessons**
+- SQLAlchemy sessions manage database interactions.
+- Pydantic schemas define and validate the API contract.
+- Database changes must be committed to persist.
+- Alembic migrations track changes to database structure.
+- HTTP status codes communicate the outcome of API requests.
+- Separating responsibilities becomes increasingly important as an application grows.
+
+**Engineering reflection**
+
+The API now communicates with PostgreSQL and supports the complete product CRUD workflow. However, the router currently contains both HTTP handling and database logic. This creates an opportunity to improve maintainability by introducing service and repository layers.
+
+**Testing status:** Manual Swagger tests completed. Automated regression tests for these endpoints remain future work.
+
