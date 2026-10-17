@@ -2,197 +2,35 @@
 
 ---
 
-# Project Overview
+# Project Overview and Engineering Principles
 
-This project is a long-term AI Engineering transformation journey.
+## Mission
 
-The goal is NOT to become a shallow AI tutorial consumer.
+Transform from a Python backend engineer into a highly capable AI engineer who can design, build, test, deploy, and maintain production-ready intelligent systems.
 
-The goal is to systematically transform from:
+The learning path is:
 
-```text
-Python Backend Engineering
-→ Data Systems
-→ Machine Learning
-→ AI Engineering
-→ Production Intelligent Systems
-```
+Python Backend Engineering → Data Systems → Machine Learning → AI Engineering → Production Intelligent Systems.
 
-This journey is designed to feel like:
+## Student Background
 
-* a personalized AI engineering school
-* a real mentorship experience
-* an engineering lab
-* a systems design workshop
-* a production engineering apprenticeship
+The student has experience with Python, FastAPI, API development, and backend project building, with growing product-thinking skills.
 
-The learning approach must always remain:
+Training must continue to build infrastructure, cloud, DevOps, machine learning, AI tooling, and distributed-systems knowledge progressively. Do not assume expertise in these areas.
 
-* implementation-first
-* beginner-friendly but deeply practical
-* systems-thinking focused
-* engineering-focused
-* production-oriented
-* long-term oriented
+## Learning and Teaching Principles
 
----
+Learning must be implementation-first, practical, interactive, and focused on deep understanding rather than passive tutorial consumption.
 
-# Current Student Background
+Every lesson should:
+- Explain the problem a concept solves and why it matters.
+- Introduce unfamiliar concepts gradually, using analogies and small examples where useful.
+- Include practical implementation, experimentation, debugging, and testing.
+- Connect concepts to backend systems, APIs, databases, scalability, AI systems, and production engineering.
+- Develop independent reasoning, architecture thinking, and problem-solving ability.
+- Explain unfamiliar tools, installation, configuration, common mistakes, and real-world use before expecting independent implementation.
 
-The student is currently:
-
-* a Python backend engineer
-* experienced with FastAPI
-* experienced with APIs and backend project building
-* growing in product thinking
-* transitioning toward AI engineering and intelligent systems
-
-The student is NOT yet:
-
-* an advanced infrastructure engineer
-* a cloud engineer
-* a DevOps engineer
-* an AI infrastructure engineer
-* an advanced distributed systems engineer
-
-The student still requires:
-
-* beginner-safe guidance
-* step-by-step tool setup explanations
-* practical implementation guidance
-* engineering reasoning explanations
-* architecture thinking guidance
-* debugging mindset training
-
-The student learns best through:
-
-* implementation
-* experimentation
-* real-world projects
-* deep explanations
-* systems thinking
-* repetition
-* practical coding
-* interactive teaching
-
-The teaching style should NEVER become:
-
-* shallow
-* theory-heavy without implementation
-* random
-* tutorial-dependent
-* disconnected from real engineering
-
----
-
-# Teaching Philosophy
-
-Always:
-
-* explain WHY concepts matter
-* connect lessons to real systems
-* connect concepts together
-* teach engineering thinking
-* teach debugging mindset
-* teach architecture thinking
-* teach production thinking
-* connect lessons to backend systems, APIs, AI systems, scalability, and production engineering
-
-The student should gradually learn to think like:
-
-* an engineer
-* a systems builder
-* an API architect
-* an AI systems engineer
-* a production-focused developer
-* a scalable backend engineer
-
-NOT just a course student.
-
----
-
-# Beginner-Safe Guidance Requirement
-
-Do NOT assume advanced knowledge of:
-
-* infrastructure
-* cloud systems
-* DevOps
-* AI tooling
-* Docker
-* distributed systems
-* orchestration systems
-* production architecture
-* ML tooling
-* vector databases
-* deployment systems
-
-Whenever tools, platforms, frameworks, databases, or environments are introduced:
-
-Always explain:
-
-* what the tool is
-* why engineers use it
-* why it matters
-* where it is used in real systems
-* how to install it
-* how to configure it
-* common beginner mistakes
-* how it connects to backend or AI systems
-
-Treat the student like an engineer in training, not an expert already.
-
----
-
-# Core Engineering Transformation Path
-
-The transformation path must always remain:
-
-```text
-Python Backend Engineering
-→ Data Systems
-→ Machine Learning
-→ AI Engineering
-→ Production Intelligent Systems
-```
-
-This project is NOT randomly learning AI.
-
-It is a structured engineering transformation roadmap.
-
-The journey must prioritize:
-
-* engineering depth
-* systems thinking
-* debugging mindset
-* architecture thinking
-* production-grade thinking
-* implementation
-* real-world systems
-* scalability
-* long-term technical relevance
-
----
-
-# Workspace Structure
-
-Main workspace folder:
-
-```text
-ai-engineering-journey/
-│
-├── architecture/
-├── experiments/
-├── notes/
-│   └── daily-learning-log.md
-├── phase-1-backend-mastery/
-├── projects/
-├── resources/
-├── roadmap/
-│   ├── year-roadmap-2026-2027.md
-│   └── master-project-context.md
-└── README.md
-```
+The goal is to develop an engineer who can solve real problems, understand system behavior, and build reliable software—not merely complete tutorials.
 
 ---
 
@@ -297,10 +135,14 @@ NOT robotic.
 The student should consistently:
 
 ```bash
-git add .
+git status
+git add <specific-files>
+git diff --cached
 git commit -m "meaningful commit message"
 git push
 ```
+
+Review staged changes before committing. Never commit `.env` files, credentials, database URLs containing secrets, or unrelated files.
 
 This project should continuously build:
 
@@ -312,108 +154,56 @@ This project should continuously build:
 
 ---
 
-# Folder Purposes
-
-## architecture/
-
-Stores:
-
-* system design notes
-* architecture diagrams
-* backend structure thinking
-* scaling discussions
-* AI workflow architecture
-* caching strategies
-* distributed systems concepts
-* infrastructure reasoning
-
----
-
-## experiments/
-
-Stores:
-
-* temporary engineering experiments
-* playground testing
-* debugging tests
-* async/concurrency testing
-* Redis testing
-* AI API experiments
-* performance experiments
-* architecture experiments
-
----
-
-## notes/
-
-Stores:
-
-* engineering notes
-* learning reflections
-* simplified explanations
-* long-term engineering understanding
-* daily-learning-log.md
-
-The file:
-
-```text
-daily-learning-log.md
-```
-
-must remain ONE continuous engineering journal across the entire journey.
-
----
-
-## projects/
-
-Stores:
-
-* production-style backend systems
-* scalable backend applications
-* AI systems
-* FastAPI systems
-* portfolio-grade engineering projects
-* production-ready architecture projects
-
----
-
-## resources/
-
-Stores:
-
-* PDFs
-* cheat sheets
-* official documentation references
-* diagrams
-* engineering references
-* external learning materials
-* architecture references
-
----
-
-## roadmap/
-
-Stores:
-
-* roadmap documents
-* transformation plans
-* project continuity documents
-* curriculum direction
-* engineering planning documents
-
----
-
 ## Current Phase
 
 Phase 1 — Backend Engineering Mastery
 
 **Status:** IN PROGRESS
 
-**Current Focus:** Week 7 — Database Engineering Continued: Relationships and Querying
+**Current Focus:** Week 9 — Database + FastAPI Integration and Layered Backend Architecture
+
+**Current Learning Day:** Day 41 completed; Day 42 is next.
 
 ---
 
-# Current Lesson Progress
+## Weekly Progress Update — Through Day 41
+
+**Current Project:** `projects/production-saas-backend/`
+
+**Current Architecture:**
+
+Client → FastAPI Router → Service Layer → Repository Layer → PostgreSQL
+
+### Day 39 — Query Execution Plans
+- Topic: `EXPLAIN` and `EXPLAIN ANALYZE`.
+- Note creation and practical experiment completion still need confirmation.
+
+### Day 40 — FastAPI + PostgreSQL Integration
+- Integrated FastAPI endpoints with PostgreSQL using SQLAlchemy.
+- Implemented and manually tested product CRUD endpoints.
+- Used Pydantic schemas for request validation and response serialization.
+- Applied the Alembic migration for the products table.
+
+### Day 41 — Service and Repository Layers
+- Introduced separation between HTTP handling, application logic, and database access.
+- Refactored `GET /products` to use the service and repository layers.
+- Refactored `GET /products/{product_id}` to use the service and repository layers.
+- Refactored `POST /products` to use the service and repository layers.
+- Manually tested the refactored endpoints successfully.
+
+### Pending Work
+- Connect the repository update function to the service and router.
+- Test the update operation, including a missing product.
+- Refactor the delete operation using the same layered architecture.
+- Add automated endpoint regression tests.
+- Confirm that the latest notes and code changes have been committed and pushed to GitHub.
+
+### Next Learning Day — Day 42
+Continue the layered architecture refactoring by connecting and testing the update operation, then proceed to the delete operation.
+
+---
+
+# Learning History
 
 ## Day 1 Completed — May 18, 2026
 
@@ -493,29 +283,6 @@ Topics learned:
 - production performance thinking
 - backend reliability concepts
 - architecture-focused debugging
-
----
-
-## Current Week
-
-Week 7 — Database Engineering Continued
-
-**Status:** COMPLETED
-
-Topics covered:
-
-* UPDATE operations
-* DELETE operations
-* transactions and rollback
-* database constraints
-* safe schema migrations
-* Alembic
-* foreign keys
-* one-to-many relationships
-* SQLAlchemy relationships
-* relationship assignment
-* relationship synchronization
-* database integrity
 
 ---
 
@@ -1089,360 +856,107 @@ Topics learned:
 
 ---
 
-# Current Files Created
+# Workspace Structure Overview
 
+The main workspace is `ai-engineering-journey/`.
+
+```text
 ai-engineering-journey/
-
-│
-├── phase-1-backend-mastery/
-│   │
-│   ├── week-1-python-internals/
-│   │   ├── experiments/
-│   │   │   ├── memory_experiments.py
-│   │   │   ├── decorator_experiments.py
-│   │   │   ├── generator_experiments.py
-│   │   │   └── async_experiments.py
-│   │   │
-│   │   └── notes/
-│   │       ├── python-memory.md
-│   │       ├── functions-and-decorators.md
-│   │       ├── iterators-and-generators.md
-│   │       ├── async-python.md
-│   │       └── engineering-review-and-systems-thinking.md
-│   │
-│   ├── week-2-engineering-structure/
-│   │   ├── experiments/
-│   │   │   ├── typing_experiments.py
-│   │   │   ├── oop_experiments.py
-│   │   │   ├── inheritance_experiments.py
-│   │   │   └── architecture_experiments.py
-│   │   │
-│   │   └── notes/
-│   │       ├── type-hinting-and-professional-functions.md
-│   │       ├── oop-and-backend-system-design.md
-│   │       ├── inheritance-and-composition.md
-│   │       ├── clean-backend-architecture.md
-│   │       └── engineering-review-and-architecture-thinking.md
-│   │
-│   ├── week-3-production-foundations/
-│   │   ├── experiments/
-│   │   │   ├── dependency_injection_experiments.py
-│   │   │   ├── context_manager_experiments.py
-│   │   │   ├── exception_handling_experiments.py
-│   │   │   └── logging_experiments.py
-│   │   │
-│   │   └── notes/
-│   │       ├── dependency-injection-and-scalable-backends.md
-│   │       ├── context-managers-and-resource-management.md
-│   │       ├── engineering-review-and-production-foundations.md
-│   │       ├── error-handling-and-custom-exceptions.md
-│   │       └── logging-and-observability-foundations.md
-│   │
-│   ├── week-4-professional-backend-development/
-│   │   ├── experiments/
-│   │   │   ├── test_addition.py
-│   │   │   ├── test_multiple_tests.py
-│   │   │   ├── test_parameterized_tests.py
-│   │   │   └── test_pytest_failures.py
-│   │   │
-│   │   └── notes/
-│   │       ├── testing-mindset-and-engineering-thinking.md
-│   │       ├── introduction-to-pytest-and-automated-testing.md
-│   │       ├── reading-pytest-failures-and-multiple-tests.md
-│   │       ├── parameterized-testing-and-dry-principle.md
-│   │       └── engineering-review-testing-and-debugging-mindset.md
-│   │
-│   ├── week-5-professional-testing-and-code-quality/
-│   │   ├── experiments/
-│   │   │   ├── test_fixtures.py
-│   │   │   ├── test_fixture_scopes.py
-│   │   │   ├── test_yield_fixtures.py
-│   │   │   ├── test_first_mock.py
-│   │   │   └── test_subscription_service.py
-│   │   │
-│   │   └── notes/
-│   │       ├── pytest-fixtures.md
-│   │       ├── fixture-scopes.md
-│   │       ├── yield-fixtures-and-resource-cleanup.md
-│   │       ├── mocking-fundamentals.md
-│   │       └── week-5-engineering-review.md
-│   │
-│   └── week-6-database-engineering/
-│       ├── experiments/
-│       │   └── [database experiments created during Weeks 6–7]
-│       │
-│       └── notes/
-│           ├── postgresql-fundamentals.md
-│           ├── sqlalchemy-models.md
-│           ├── sqlalchemy-engine-and-connections.md
-│           ├── sqlalchemy-sessions-and-transactions.md
-│           ├── sqlalchemy-insert-operations.md
-│           ├── sqlalchemy-read-operations.md
-│           ├── day-31-update-delete-transactions.md
-│           ├── day-32-database-constraints.md
-│           ├── day-33-database-schema-evolution-and-safe-migrations.md
-│           ├── day-34-foreign-keys-and-relationships.md
-│           └── day-35-one-to-many-relationships.md
-│
-├── projects/
-│   │
-│   └── database-lab/
-│       ├── app/
-│       │   ├── __init__.py
-│       │   ├── database.py
-│       │   ├── models.py
-│       │   ├── insert_product.py
-│       │   ├── read_products.py
-│       │   └── get_product.py
-│       │
-│       └── [other database-lab files]
-│
-├── architecture/
-│
-├── experiments/
-│
+├── architecture/                     # System design and architecture notes
+├── experiments/                      # Engineering experiments and testing
 ├── notes/
-│   └── daily-learning-log.md
-│
-├── resources/
-│
+│   └── daily-learning-log.md          # Continuous learning journal
+├── phase-1-backend-mastery/           # Backend engineering curriculum
+├── projects/
+│   ├── database-lab/                  # Database learning project
+│   └── production-saas-backend/       # FastAPI + PostgreSQL backend project
+├── resources/                         # Documentation and learning resources
 ├── roadmap/
-│   ├── year-roadmap-2026-2027.md
-│   └── master-project-context.md
-│
+│   ├── year-roadmap-2026-2027.md      # Curriculum and long-term roadmap
+│   └── master-project-context.md      # Project context and learning continuity
 └── README.md
+```
+
+**Maintenance rule:** This section describes the major workspace folders and projects, not every individual file. Update it only when the main folder structure or a major project changes.
+
+For the latest lesson progress, consult the Current Phase and Weekly Progress Update sections. For the detailed curriculum, consult `roadmap/year-roadmap-2026-2027.md`.
+
+## Current Production Backend Project
+
+**Project path:** `projects/production-saas-backend/`
+
+**Technology stack:** FastAPI, SQLAlchemy, PostgreSQL, Alembic, Pydantic, pytest.
+
+**Current implementation status:**
+- Product model, database configuration, schemas, and product CRUD endpoints exist. The service/repository refactoring and automated testing are still in progress.
+- GET and POST operations have been refactored to use service and repository layers.
+- Repository update function exists but is not yet connected to the service and router.
+- PUT and DELETE refactoring remains pending.
+- Automated endpoint regression tests remain to be confirmed.
+
+**Security reminder:** Keep `.env` and database credentials out of Git.
 
 ---
 
-# Week 1 Plan
+# Curriculum Reference
 
-## Theme
+The detailed learning curriculum and phase-by-phase plan are maintained in `roadmap/year-roadmap-2026-2027.md`.
 
-Thinking Like a Senior Python Engineer
-
----
-
-## Monday — Deep Python Internals
-
-Status:
-
-COMPLETED
-
-Topics:
-
-* memory
-* references
-* mutability
-* object behavior
-* Python execution model
+This master context preserves the project's mission, current progress, learning history, workspace structure, and important project decisions. Avoid duplicating detailed lesson plans already recorded elsewhere.
 
 ---
 
-## Tuesday — Functions Like a Professional
+# Long-Term Goals and Teaching Protocol
 
-Topics:
+## Engineering Goals
 
-* first-class functions
-* closures
-* decorators
-* *args and **kwargs
-* higher-order functions
+Develop into a strong backend engineer, AI systems engineer, ML-capable engineer, production-focused engineer, intelligent systems builder, and scalable API architect.
 
-Project:
+Priorities:
+- Deep technical understanding and implementation.
+- Systems thinking, architecture, and debugging.
+- Reliable, maintainable, production-ready software.
+- Real-world project building and independent problem-solving.
+- Long-term adaptability and technical relevance.
 
-* reusable logging decorators
+## Teaching Protocol
 
----
+Every learning session should:
+1. Introduce concepts gradually, using practical explanations and examples.
+2. Prioritize implementation, experimentation, and debugging.
+3. Build reasoning through execution tracing and prediction exercises after foundational understanding is established.
+4. Connect concepts to backend systems, APIs, scalability, production systems, and AI engineering.
+5. Encourage the student to explain concepts in their own words.
+6. Maintain a conversational, beginner-safe, mentorship-oriented approach.
+7. End with appropriate notes, a daily learning log update, necessary file updates, and the GitHub workflow.
+8. Maintain continuity using the roadmap, master context, daily learning log, and existing project structure.
 
-## Wednesday — Iterators + Generators
-
-Topics:
-
-* lazy evaluation
-* memory efficiency
-* streaming systems
-
-Project:
-
-* large-file streaming processor
-
----
-
-## Thursday — Async Python Deep Dive
-
-Topics:
-
-* async/await
-* event loop
-* concurrency
-* why FastAPI is fast
-
-Project:
-
-* concurrent API requester
+The goal is engineering independence, not tutorial dependency. Do not rush the curriculum or sacrifice understanding for speed.
 
 ---
-
-## Friday — Engineering Review Day
-
-Focus:
-
-* debugging mindset
-* architecture reasoning
-* implementation review
-* systems thinking reinforcement
-* engineering explanations
-* backend architecture understanding
-
----
-
-# Long-Term Roadmap Summary
-
-## Phase 1
-
-Backend Engineering Mastery
-(May → July 2026)
-
----
-
-## Phase 2
-
-Data Analysis + Statistics
-(August → September 2026)
-
----
-
-## Phase 3
-
-Machine Learning Foundations
-(October → December 2026)
-
----
-
-## Phase 4
-
-AI Engineering + LLM Systems
-(January → March 2027)
-
----
-
-## Phase 5
-
-Production AI Systems
-(April → May 2027)
-
----
-
-# Important Long-Term Goal
-
-The final goal is to become:
-
-* a strong backend engineer
-* an AI systems engineer
-* an ML-capable engineer
-* a production-focused engineer
-* an intelligent systems builder
-* a scalable API architect
-
-The project must always prioritize:
-
-* engineering depth
-* implementation
-* systems thinking
-* debugging mindset
-* production thinking
-* architecture thinking
-* real-world project building
-* long-term technical relevance
-* scalable systems thinking
-* production-grade engineering
-
----
-
-# Final Engineering Philosophy
-
-This journey is NOT about rushing.
-
-It is about:
-
-* consistency
-* engineering maturity
-* deep understanding
-* implementation
-* production thinking
-* systems thinking
-* architecture understanding
-* real-world engineering growth
-
----
-
-# Teaching Execution Style
-
-Every class session should follow this structure:
-
-1. Introduce the engineering concept slowly and practically.
-
-2. Use implementation-first teaching.
-
-3. Ask prediction-based engineering questions frequently.
-
-4. Force execution tracing and reasoning before revealing answers.
-
-5. Continuously connect concepts to:
-   - backend systems
-   - APIs
-   - scalability
-   - production systems
-   - AI engineering
-   - architecture thinking
-
-6. The student should explain concepts in their own words frequently.
-
-7. The teaching style should remain:
-   - conversational
-   - mentorship-oriented
-   - engineering-focused
-   - beginner-safe
-   - systems-thinking focused
-
-8. Every learning day should end with:
-   - notes markdown
-   - daily learning log update
-   - file structure updates if needed
-   - GitHub push workflow
-
-9. Notes should remain natural, reflective, and beginner-engineer friendly.
-
-10. The assistant should maintain continuity across future chats using:
-   - roadmap documents
-   - master-project-context.md
-   - daily-learning-log.md
-   - existing project structure
 
 # Public Documentation Milestone
 
-Start Date:
-August 3, 2026
+**Planned start date:** August 3, 2026  
+**Status:** Planned — not yet started
 
-The student will begin publicly documenting the engineering transformation journey.
+## Purpose
 
-The public narrative should focus on:
+Begin publicly documenting the engineering transformation during Phase 2, after establishing the private engineering foundations.
 
-Python Backend Engineer
-→ Data Systems
-→ Machine Learning
-→ AI Engineering
-→ Production Intelligent Systems
+The public narrative will follow this progression:
 
-The purpose is to:
+Python Backend Engineer → Data Systems → Machine Learning → AI Engineering → Production Intelligent Systems
 
-- build accountability
-- develop communication skills
-- create an engineering portfolio in public
-- document projects and experiments
-- showcase long-term growth
-- build an authentic AI engineering brand
+## Objectives
 
-The public journey should begin during Phase 2 (Data Analysis and Statistics), not during the private foundation-building phase.   
+- Build accountability and consistency.
+- Improve technical communication.
+- Create an engineering portfolio in public.
+- Document real projects, experiments, and lessons learned.
+- Demonstrate technical growth through practical work.
+- Build an authentic AI engineering professional brand.
+
+Public documentation should reflect genuine learning and implementation. Do not present planned work as completed or claim technical achievements that have not been verified.
 
 

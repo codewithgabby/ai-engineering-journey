@@ -907,3 +907,13 @@ The API now communicates with PostgreSQL and supports the complete product CRUD 
 
 **Testing status:** Manual Swagger tests completed. Automated regression tests for these endpoints remain future work.
 
+############################################################   
+
+## Day 41 — July 10, 2026
+
+Today, I learn how to separate my FastAPI application into router, service, and repository layers. I move database operations out of the router and into the repository, while the service coordinates the operations.
+
+I test product retrieval and creation, and the endpoints continue to work as expected. I understand that good backend architecture is not just about making endpoints work; it is also about organizing code so it is easier to maintain, test, and extend.
+
+My next step is to complete the update and delete operations using the same structure.
+
