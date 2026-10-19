@@ -818,6 +818,51 @@ The project will demonstrate how to process files while managing resource usage,
 
 ---
 
+### Phase 1 Capstone — Production-Grade SaaS Backend Platform
+
+**Objective:** Extend the production-grade SaaS backend project into a reliable, tested, maintainable backend system that demonstrates strong backend engineering fundamentals.
+
+**Core Functionality:**
+- Authentication and authorization with appropriate access controls.
+- RESTful API endpoints with request validation and consistent error handling.
+- PostgreSQL database integration, SQLAlchemy models, and Alembic migrations.
+- Clear separation of routers, schemas, services, and repositories.
+- Database constraints, indexes, and query-performance investigation.
+- Automated tests for important business logic and API behavior.
+- Appropriate logging, configuration management, and security practices.
+- Background processing or caching where justified by a real requirement.
+- Docker-based local setup and a documented deployment workflow.
+
+**Architecture Requirements:**
+- Keep HTTP handling separate from business logic and database operations.
+- Make dependencies explicit and keep configuration outside application code.
+- Document important architectural decisions and trade-offs.
+- Avoid adding infrastructure merely to make the project look more advanced.
+
+**Testing and Verification:**
+- Test successful requests and important failure cases.
+- Verify authentication, authorization, validation, and database behavior.
+- Run automated tests and resolve regressions before release.
+- Document the setup and verify the application can run from a clean environment.
+
+**Deliverables:**
+- Working backend application and API documentation.
+- Database models and migrations.
+- Automated test suite.
+- README with setup, configuration, testing, and deployment instructions.
+- Architecture notes explaining key decisions and known limitations.
+
+**Capstone Exit Criteria:**
+- The core workflows work end to end.
+- The main API behavior is covered by automated tests.
+- Database changes are managed through migrations.
+- The application can be configured and run using documented instructions.
+- Architectural decisions and known limitations are documented.
+
+**Completion Rule:** Mark this capstone complete only after implementation and verification. Completing the smaller Phase 1 projects does not automatically mean the capstone is complete.
+
+---
+
 ## 4.17 Phase 1 Exit Criteria
 
 Phase 1 is not considered complete simply because October 2026 has arrived.
@@ -1348,6 +1393,56 @@ This project demonstrates how analytical functionality can become part of a real
 
 ---
 
+### Phase 2 Capstone — End-to-End Business Analytics System
+
+**Objective:** Build a complete data analytics system that transforms raw business data into reliable datasets, meaningful statistical findings, visualizations, and API-accessible insights.
+
+**Core Functionality:**
+- Load business sales and customer data from suitable files or database sources.
+- Inspect datasets and identify missing values, duplicates, inconsistent formats, and invalid records.
+- Clean and validate data using Python, Pandas, and NumPy.
+- Build a repeatable data-processing pipeline.
+- Perform exploratory data analysis to identify trends, patterns, and anomalies.
+- Calculate and interpret appropriate descriptive statistics.
+- Investigate relationships between relevant business variables without assuming that correlation proves causation.
+- Create visualizations that communicate findings clearly.
+- Expose selected analytics through a FastAPI endpoint.
+- Document data limitations and the assumptions behind the analysis.
+
+**Architecture Requirements:**
+- Separate data loading, cleaning, analysis, visualization, and API responsibilities.
+- Keep data transformations repeatable and understandable.
+- Validate inputs and handle missing or invalid data deliberately.
+- Make analytical logic reusable instead of embedding everything inside API route handlers.
+
+**Testing and Verification:**
+- Test data-cleaning and transformation functions using representative examples.
+- Verify important calculations against manually checked results.
+- Test behavior when data is missing, malformed, or empty.
+- Test API responses and error handling.
+- Check that conclusions are supported by the actual data.
+
+**Deliverables:**
+- A documented dataset and data-quality assessment.
+- A repeatable analytics pipeline.
+- Exploratory analysis and statistical findings.
+- Visualizations with written interpretations.
+- A FastAPI analytics endpoint.
+- Automated tests for important transformations and API behavior.
+- A README explaining setup, data sources, methodology, findings, and limitations.
+
+**Capstone Exit Criteria:**
+- Raw data can be transformed into a validated, analysis-ready dataset.
+- The analysis produces reproducible results.
+- Statistical findings are interpreted accurately and in context.
+- Visualizations communicate useful business insights.
+- The API exposes selected analytical results reliably.
+- The project's assumptions and limitations are documented.
+
+**Completion Rule:** Mark this capstone complete only after the pipeline, analysis, and API have been implemented and verified. Completing the smaller Phase 2 projects does not automatically mean the capstone is complete.
+
+---
+
 # 9. PHASE 2 EXIT CRITERIA
 
 Before moving into formal machine learning, the learner should be able to demonstrate the following skills.
@@ -1607,6 +1702,69 @@ FastAPI
    ↓
 Backend Application
 ```
+
+---
+
+### Phase 3 Capstone — End-to-End Machine Learning Application
+
+**Objective:** Build a complete machine learning application that takes data through preparation, training, evaluation, and inference, then exposes predictions through a tested backend API.
+
+**Recommended Project:** Customer Churn Prediction System.
+
+Use a suitable customer dataset to predict which customers may be at risk of leaving a service. Treat predictions as estimates, not certainties.
+
+**Core Functionality:**
+- Load and inspect a suitable dataset.
+- Identify missing values, invalid records, and potential data-quality problems.
+- Define the prediction target and select relevant features.
+- Split data appropriately into training and evaluation sets.
+- Establish a simple baseline model.
+- Train and compare suitable machine learning models.
+- Evaluate models using metrics appropriate to the problem.
+- Investigate overfitting, underfitting, and possible data leakage.
+- Build a repeatable preprocessing and model-training pipeline.
+- Save and load the selected model.
+- Expose predictions through a FastAPI inference endpoint.
+- Validate incoming prediction requests and handle invalid inputs.
+- Explain the model's limitations and the responsible interpretation of its predictions.
+
+**Architecture Requirements:**
+- Separate data preparation, training, evaluation, and inference responsibilities.
+- Keep preprocessing consistent between training and prediction.
+- Avoid training the model inside ordinary prediction requests.
+- Version or clearly identify the model artifact used by the API.
+- Keep model configuration and application configuration manageable.
+
+**Testing and Verification:**
+- Test preprocessing and feature preparation.
+- Verify that the training and evaluation process is reproducible.
+- Check that evaluation metrics are calculated correctly.
+- Test model loading and prediction behavior.
+- Test API validation, successful predictions, and failure cases.
+- Confirm that evaluation data was not improperly used during training or model selection.
+
+**Deliverables:**
+- Documented dataset and problem definition.
+- Data preparation and exploratory analysis.
+- Baseline and model-comparison experiments.
+- Evaluation report explaining the chosen metrics and results.
+- Reusable training and preprocessing pipeline.
+- Saved model artifact.
+- FastAPI inference endpoint.
+- Automated tests.
+- README documenting setup, training, evaluation, inference, and limitations.
+
+**Capstone Exit Criteria:**
+- The model is trained and evaluated using a defensible methodology.
+- The selected model is compared against a baseline.
+- The prediction pipeline applies the same required preprocessing at inference time.
+- The API returns validated predictions and handles errors.
+- Important limitations and evaluation results are documented.
+- The application can be run and tested using documented instructions.
+
+**Completion Rule:** Mark this capstone complete only after the model, evaluation pipeline, and inference API have been implemented and verified. Completing the smaller Phase 3 projects does not automatically mean the capstone is complete.
+
+---
 
 ## 10.12 Phase 3 Exit Criteria
 
@@ -1935,6 +2093,64 @@ The project should investigate:
 
 The goal is to understand whether multiple agents provide a real advantage over a simpler workflow.
 
+---
+
+### Phase 4 Capstone — Intelligent Document Assistant
+
+**Objective:** Build an LLM-powered document assistant that allows users to ask questions about their documents and receive relevant, grounded answers through a backend API.
+
+**Core Functionality:**
+- Accept supported document uploads and validate file types and sizes.
+- Extract text from documents and divide it into manageable chunks.
+- Generate embeddings and store them for semantic retrieval.
+- Retrieve relevant document passages for a user's question.
+- Use an LLM to generate answers grounded in retrieved content.
+- Return structured responses, including relevant source references where available.
+- Support appropriate handling of questions that cannot be answered from the available documents.
+- Validate inputs and handle malformed files, empty documents, retrieval failures, and model API errors.
+- Track basic usage, latency, and model-related costs.
+- Evaluate answer relevance, retrieval quality, and grounding using a defined test dataset.
+
+**Architecture Requirements:**
+- Separate document ingestion, text processing, embedding generation, retrieval, and answer generation.
+- Expose functionality through well-defined FastAPI endpoints.
+- Keep model-provider integration separate from business logic.
+- Store document metadata and access information appropriately.
+- Enforce document-level authorization so users cannot retrieve another user's private content.
+- Keep prompts, model configuration, and application settings manageable.
+- Make external model and embedding calls resilient to expected failures.
+
+**Testing and Verification:**
+- Test document validation and text extraction.
+- Test chunking and retrieval behavior with known example documents.
+- Verify that answers use retrieved evidence rather than unsupported assumptions.
+- Test unanswerable questions and missing relevant context.
+- Test API validation, authorization, and error handling.
+- Evaluate retrieval and answer quality against a small, documented test set.
+- Check behavior when external model services fail or return unexpected output.
+
+**Deliverables:**
+- Working document ingestion and retrieval pipeline.
+- Embedding and vector-storage integration.
+- LLM-powered question-answering service.
+- FastAPI endpoints and request/response schemas.
+- Documented access-control and error-handling decisions.
+- Automated tests and an evaluation dataset.
+- Evaluation report covering retrieval quality, answer quality, and limitations.
+- README documenting setup, configuration, architecture, and usage.
+
+**Capstone Exit Criteria:**
+- Users can submit supported documents and ask questions about their contents.
+- Relevant passages can be retrieved for evaluation questions.
+- Answers are grounded in available evidence, with uncertainty or insufficient context handled appropriately.
+- Document access controls are enforced and tested.
+- The API handles important failure cases.
+- Evaluation results and system limitations are documented.
+
+**Completion Rule:** Mark this capstone complete only after the document pipeline, retrieval system, LLM integration, API, and evaluation process have been implemented and verified. Completing the smaller Phase 4 projects does not automatically mean the capstone is complete.
+
+---
+
 ## 11.11 Phase 4 Exit Criteria
 
 The learner should be able to:
@@ -2177,20 +2393,81 @@ Produce:
 - Example use cases.
 - A demonstration of the working system.
 
+---
+
 ## 13.4 Capstone Exit Criteria
 
-The project should demonstrate that the learner can:
+The project is considered complete only when the implementation has been tested, the running system has been verified, and the engineering decisions are documented.
 
-- Explain the problem and intended users.
-- Design a coherent architecture.
-- Implement the backend.
-- Integrate AI functionality appropriately.
-- Validate data and model outputs.
-- Test expected behavior and failure cases.
-- Explain reliability and security considerations.
-- Deploy and verify the system.
-- Describe trade-offs and limitations.
-- Maintain the project through documentation and reproducible workflows.
+### Product and Architecture
+
+The learner can:
+
+- Explain the problem, target users, and intended outcomes.
+- Demonstrate the core user workflows against defined acceptance criteria.
+- Explain the system architecture, component boundaries, data model, and API design.
+- Justify the technologies selected and identify unnecessary complexity avoided.
+- Document important architectural decisions and trade-offs.
+
+### Backend and Data Engineering
+
+The learner can:
+
+- Implement and verify the backend API, business logic, and persistence layer.
+- Validate incoming data and handle expected failure cases.
+- Demonstrate appropriate authentication, authorization, and data protection.
+- Explain database design, migrations, and relevant performance decisions.
+- Verify important application behavior using automated tests.
+
+### AI and Evaluation
+
+Where AI or machine learning is part of the product, the learner can:
+
+- Explain what the AI component does and why it is appropriate for the problem.
+- Evaluate AI outputs against defined test cases or evaluation criteria.
+- Identify important failure modes, limitations, and risks of incorrect outputs.
+- Demonstrate how the application handles invalid, incomplete, or unreliable AI responses.
+- Explain the difference between ordinary application correctness and AI output quality.
+
+### Reliability and Operations
+
+The learner can:
+
+- Demonstrate meaningful logging and appropriate error handling.
+- Explain how failures in databases, external APIs, or AI services affect the system.
+- Implement retries, timeouts, fallbacks, caching, or background processing where justified.
+- Measure relevant performance indicators, such as response latency or processing time.
+- Identify important operational risks and explain how the system would be monitored.
+
+### Deployment and Reproducibility
+
+The learner can:
+
+- Deploy the application to a suitable environment and verify that it runs.
+- Configure environment-specific settings without committing secrets.
+- Reproduce the documented setup and test workflow.
+- Explain how application updates, database migrations, and configuration changes are managed.
+- Document known deployment limitations and operational requirements.
+
+### Final Deliverables
+
+The completed project includes:
+
+- A working application with demonstrated core workflows.
+- Source code organized into understandable components.
+- Automated tests and recorded verification results.
+- Architecture documentation and important design decisions.
+- Setup, configuration, testing, and deployment instructions.
+- API documentation where applicable.
+- An evaluation report for AI or machine learning functionality, where applicable.
+- Known limitations, future improvements, and example use cases.
+- A demonstration showing the system working.
+
+### Completion Rule
+
+Mark the capstone as complete only when the core functionality works, the relevant tests pass, deployment has been verified, and the required documentation is available.
+
+Not every possible technology must be implemented. The learner must demonstrate that each major architectural choice solves a real problem and that the finished system is appropriate for its intended use.
 
 **The capstone is evidence of engineering ability, not merely a collection of technologies.**
 

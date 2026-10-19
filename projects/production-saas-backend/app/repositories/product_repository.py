@@ -44,3 +44,18 @@ def update(
     return product
 
 
+
+def delete(db: Session, product_id: int) -> bool:
+    product = get_by_id(db, product_id)
+
+    if product is None:
+        return False
+
+    db.delete(product)
+    db.commit()
+
+    return True
+
+
+
+

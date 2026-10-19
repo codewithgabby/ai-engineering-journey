@@ -1,11 +1,17 @@
-from fastapi import APIRouter, Depends, status, HTTPException
-from sqlalchemy import select
+from fastapi import APIRouter, Depends, HTTPException
+
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models.product import Product
 from app.schemas.product import ProductCreate, ProductResponse, ProductUpdate
-from app.services.product_service import create_product, get_all_products, get_product_by_id 
+from app.services.product_service import (
+    create_product,
+    get_all_products,
+    get_product_by_id,
+    update_product,
+    delete_product,
+)
 
 router = APIRouter(prefix="/products", tags=["Products"])
 
@@ -25,29 +31,26 @@ def get_product(product_id: int, db: Session = Depends(get_db)):
     return product
 
 
+
 @router.put("/{product_id}", response_model=ProductResponse)
-def update_product(
+def update_product_endpoint(
     product_id: int,
     product_data: ProductUpdate,
     db: Session = Depends(get_db),
 ):
-    statement = select(Product).where(Product.id == product_id)
-    product = db.scalar(statement)
+    updated_product = update_product(
+        db,
+        product_id,
+        product_data.model_dump(),
+    )
 
-    if product is None:
+    if updated_product is None:
         raise HTTPException(
             status_code=404,
             detail="Product not found",
         )
 
-    product.name = product_data.name
-    product.price = product_data.price
-    product.quantity = product_data.quantity
-
-    db.commit()
-    db.refresh(product)
-
-    return product
+    return updated_product
 
 
 @router.post("/", response_model=ProductResponse, status_code=201)
@@ -59,19 +62,18 @@ def create_product_endpoint(
     return create_product(db, product)
 
 
+
 @router.delete("/{product_id}", status_code=204)
-def delete_product(
+def delete_product_endpoint(
     product_id: int,
     db: Session = Depends(get_db),
 ):
-    statement = select(Product).where(Product.id == product_id)
-    product = db.scalar(statement)
+    deleted = delete_product(db, product_id)
 
-    if product is None:
+    if not deleted:
         raise HTTPException(
             status_code=404,
             detail="Product not found",
         )
 
-    db.delete(product)
-    db.commit()
+    return None

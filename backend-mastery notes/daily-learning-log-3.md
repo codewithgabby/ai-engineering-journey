@@ -917,3 +917,8 @@ I test product retrieval and creation, and the endpoints continue to work as exp
 
 My next step is to complete the update and delete operations using the same structure.
 
+##################################################################  
+
+### Day 42 — Monday, July 13, 2026
+
+Today, I learned how to separate database operations from the service and router layers in my FastAPI application. I connected the product update and delete operations through the repository, service, and router layers. I tested the endpoints using Swagger UI and confirmed that successful updates return 200, successful deletions return 204, and missing products return 404. I also learned why manual API testing is useful and why automated regression tests are still important. Syntax and import checks passed, but automated tests remain outstanding.
