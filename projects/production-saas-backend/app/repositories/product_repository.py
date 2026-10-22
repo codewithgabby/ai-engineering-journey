@@ -18,11 +18,19 @@ def get_all(db: Session) -> list[Product]:
     return list(db.scalars(statement).all())
 
 
+
 def create(db: Session, product: Product) -> Product:
-    db.add(product)
-    db.commit()
-    db.refresh(product)
+    try:
+        db.add(product)
+        db.commit()
+        db.refresh(product)
+    except Exception:
+        db.rollback()
+        raise
+
     return product
+
+
 
 
 def update(
@@ -38,10 +46,16 @@ def update(
     for field, value in update_data.items():
         setattr(product, field, value)
 
-    db.commit()
-    db.refresh(product)
+    try:
+        db.commit()
+        db.refresh(product)
+    except Exception:
+        db.rollback()
+        raise
 
     return product
+
+
 
 
 
@@ -51,10 +65,15 @@ def delete(db: Session, product_id: int) -> bool:
     if product is None:
         return False
 
-    db.delete(product)
-    db.commit()
+    try:
+        db.delete(product)
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
 
     return True
+
 
 
 

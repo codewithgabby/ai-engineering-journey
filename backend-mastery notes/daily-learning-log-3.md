@@ -921,4 +921,10 @@ My next step is to complete the update and delete operations using the same stru
 
 ### Day 42 — Monday, July 13, 2026
 
-Today, I learned how to separate database operations from the service and router layers in my FastAPI application. I connected the product update and delete operations through the repository, service, and router layers. I tested the endpoints using Swagger UI and confirmed that successful updates return 200, successful deletions return 204, and missing products return 404. I also learned why manual API testing is useful and why automated regression tests are still important. Syntax and import checks passed, but automated tests remain outstanding.
+Today, I learned how to separate database operations from the service and router layers in my FastAPI application. I connected the product update and delete operations through the repository, service, and router layers. I tested the endpoints using Swagger UI and confirmed that successful updates return 200, successful deletions return 204, and missing products return 404. I also learned why manual API testing is useful and why automated regression tests are still important. Syntax and import checks passed, but automated tests remain outstanding. 
+
+##################################################################  
+
+### Day 43 — Tuesday, July 14, 2026
+
+Today, I learned how to improve database transaction reliability in my FastAPI backend. I added rollback handling to the repository's create, update, and delete operations so failed database transactions can be recovered from without silently hiding exceptions. I also learned that rollback cannot undo a transaction that has already been committed. I verified the updated code using Python compilation and import checks. My next step is to continue improving the reliability of my backend architecture.
