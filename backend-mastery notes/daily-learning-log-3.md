@@ -927,4 +927,10 @@ Today, I learned how to separate database operations from the service and router
 
 ### Day 43 — Tuesday, July 14, 2026
 
-Today, I learned how to improve database transaction reliability in my FastAPI backend. I added rollback handling to the repository's create, update, and delete operations so failed database transactions can be recovered from without silently hiding exceptions. I also learned that rollback cannot undo a transaction that has already been committed. I verified the updated code using Python compilation and import checks. My next step is to continue improving the reliability of my backend architecture.
+Today, I learned how to improve database transaction reliability in my FastAPI backend. I added rollback handling to the repository's create, update, and delete operations so failed database transactions can be recovered from without silently hiding exceptions. I also learned that rollback cannot undo a transaction that has already been committed. I verified the updated code using Python compilation and import checks. My next step is to continue improving the reliability of my backend architecture.  
+
+##################################################################   
+
+### Day 44 — Wednesday, July 15, 2026
+
+Today, I learned about database transaction boundaries and why related database operations should succeed or fail together. I used three isolated SQLAlchemy experiments to demonstrate how failed transactions roll back uncommitted changes. I also learned that a database session and a transaction are different concepts. In my FastAPI backend, I added an `update_fields()` repository helper that modifies a product without committing independently. Compilation and import checks passed. My next step is to integrate transaction ownership into the service layer carefully without breaking existing CRUD functionality.

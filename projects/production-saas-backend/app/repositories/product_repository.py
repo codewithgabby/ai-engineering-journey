@@ -75,6 +75,18 @@ def delete(db: Session, product_id: int) -> bool:
     return True
 
 
+def update_fields(
+    db: Session,
+    product: Product,
+    update_data: dict,
+) -> Product:
+    for field, value in update_data.items():
+        setattr(product, field, value)
+
+    return product
+
+
+
 
 
 
