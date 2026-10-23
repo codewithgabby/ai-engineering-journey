@@ -1,0 +1,32 @@
+# Day 45 — Transaction Boundaries
+
+## What I learned
+
+A database transaction groups related database operations so they can succeed or fail together.
+
+The service layer can coordinate operations that belong to one business action. The repository layer handles database access.
+
+## Practical work
+
+- Added an experimental `update_product_transactionally()` service function.
+- Ran Python compilation and import checks successfully.
+- Did not connect the experimental function to the existing API router.
+- Did not complete manual verification against PostgreSQL.
+
+## Engineering lesson
+
+Database transaction management matters because a partially completed business operation can leave data inconsistent. However, transaction ownership involves details that need further practice.
+
+I will revisit this concept when it becomes necessary in a practical project feature.
+
+## Current status
+
+**Implemented:** Experimental service function.
+
+**Verified:** Python compilation and import checks.
+
+**Needs review:** Transaction behavior against PostgreSQL.
+
+## Next step
+
+Continue the production FastAPI backend project, preserve existing working endpoints, and focus on the next practical implementation task.

@@ -933,4 +933,31 @@ Today, I learned how to improve database transaction reliability in my FastAPI b
 
 ### Day 44 — Wednesday, July 15, 2026
 
-Today, I learned about database transaction boundaries and why related database operations should succeed or fail together. I used three isolated SQLAlchemy experiments to demonstrate how failed transactions roll back uncommitted changes. I also learned that a database session and a transaction are different concepts. In my FastAPI backend, I added an `update_fields()` repository helper that modifies a product without committing independently. Compilation and import checks passed. My next step is to integrate transaction ownership into the service layer carefully without breaking existing CRUD functionality.
+Today, I learned about database transaction boundaries and why related database operations should succeed or fail together. I used three isolated SQLAlchemy experiments to demonstrate how failed transactions roll back uncommitted changes. I also learned that a database session and a transaction are different concepts. In my FastAPI backend, I added an `update_fields()` repository helper that modifies a product without committing independently. Compilation and import checks passed. My next step is to integrate transaction ownership into the service layer carefully without breaking existing CRUD functionality.   
+
+###########################################################   
+
+## Day 45 — Thursday, July 16, 2026
+
+### Focus
+Database transaction boundaries and service-layer transaction ownership.
+
+### What I worked on
+I explored how a service function can coordinate database operations within a transaction. I added an experimental `update_product_transactionally()` function and confirmed that the application code compiled and the function could be imported.
+
+### What I found difficult
+I struggled to understand transaction ownership, particularly how SQLAlchemy sessions and service functions interact. The topic became more complicated than I could comfortably follow at this stage.
+
+### Engineering realization
+A working piece of code is not automatically a fully verified feature. Compilation and import checks confirm basic code validity, but database behavior still requires appropriate verification.
+
+### Decision
+I stopped the deeper transaction experiments rather than continuing without understanding. The experimental function remains disconnected from the router. Existing CRUD behavior should be preserved.
+
+### Remaining work
+- Review transaction ownership later when a real feature requires it.
+- Continue developing the production FastAPI backend.
+- Keep track of which behaviors have been implemented, manually verified, or remain unverified.
+
+### Next session
+Day 46 will focus on the existing FastAPI project and its next practical milestone, following the master roadmap.
