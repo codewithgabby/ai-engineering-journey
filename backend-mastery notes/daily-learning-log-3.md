@@ -960,4 +960,28 @@ I stopped the deeper transaction experiments rather than continuing without unde
 - Keep track of which behaviors have been implemented, manually verified, or remain unverified.
 
 ### Next session
-Day 46 will focus on the existing FastAPI project and its next practical milestone, following the master roadmap.
+Day 46 will focus on the existing FastAPI project and its next practical milestone, following the master roadmap.  
+
+#####################################################   
+
+## Day 46 — Authentication Fundamentals
+
+**Session:** Friday
+
+### What I learned
+- Authentication verifies identity; authorization checks permissions.
+- A valid access token does not grant access to every resource.
+- Access tokens should be protected and commonly have limited lifetimes.
+- Passwords should be stored as secure password hashes, not plaintext.
+- FastAPI dependencies can centralize reusable authentication checks.
+
+### Practical work
+Inspected the production SaaS backend's `main.py`, `database.py`, and `product.py`. Confirmed that the Alembic configuration and migration directory exist.
+
+### Current status
+Authentication has not yet been implemented. No files were modified during today's inspection.
+
+### Next session
+Inspect the Alembic environment and existing migrations, then create and verify the User model and its database migration.
+
+**Key lesson:** Security must be enforced by the backend. Knowing who a user is does not automatically determine what they are allowed to access.

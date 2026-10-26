@@ -641,6 +641,20 @@ These concepts will be applied to multi-user backend systems, protected resource
 
 ---
 
+### Current Learning Status
+
+**Status:** In Progress — Day 46 fundamentals introduced.
+
+The learner has studied authentication, authorization, access tokens, password hashing, and the purpose of reusable FastAPI authentication dependencies.
+
+The next practical milestone is to inspect the existing Alembic setup, create the User model and database migration, and implement registration with secure password hashing.
+
+Login, token generation and validation, protected endpoints, and authorization remain future implementation milestones.
+
+**Completion rule:** Mark authentication as verified only after the implementation has been manually checked and the learner can explain the main request flow and security boundaries.
+
+---
+
 ## 4.11 File Systems and File Processing
 
 ### Objective
@@ -2832,25 +2846,47 @@ Not every topic requires every type of evidence. The evidence should match the s
 
 ## 18.4 Current Progress
 
-The current progress section should record:
-
-- The latest confirmed learning day.
-- The current phase and week.
-- Completed topics.
-- Work in progress.
-- Unverified work.
-- Known blockers.
-- The next concrete learning task.
+The current progress section records the latest confirmed learning day, current phase, completed learning, unfinished implementation, known blockers, and the next concrete task.
 
 **Current project:** `projects/production-saas-backend/`
 
 **Current curriculum position:** Phase 1 — Backend Engineering Mastery.
 
-The latest confirmed working context identifies Day 41 as the most recently completed learning day, with Day 42 next. The immediate backend work includes completing the service/repository refactoring for update and delete operations and establishing automated endpoint regression tests.
+**Latest learning session:** Day 46 — Authentication Fundamentals.
 
-This is a progress snapshot, not a claim that the remaining work has been completed.
+### Confirmed progress
 
-Update this section when progress has been confirmed. Preserve historical learning records instead of silently rewriting them to match a new schedule.
+- Reviewed the difference between authentication and authorization.
+- Learned the purpose of access tokens and why they must be protected.
+- Introduced password hashing and why plaintext passwords must not be stored.
+- Learned how FastAPI dependencies can centralize reusable authentication checks.
+- Inspected `app/main.py`, `app/database.py`, and `app/models/product.py`.
+- Confirmed that the project contains an Alembic configuration and migration directory.
+- Reviewed the existing FastAPI, SQLAlchemy, PostgreSQL, and layered backend structure.
+
+### Current status
+
+Authentication fundamentals: **In Progress**
+
+Authentication implementation: **Not Started**
+
+The existing product CRUD implementation remains part of the project. No authentication files were created or modified during the Day 46 inspection.
+
+### Next learning session — Day 47
+
+**Focus: Prepare the database foundation for authentication.**
+
+1. Inspect `alembic/env.py` and the existing migration files.
+2. Understand how Alembic discovers SQLAlchemy models.
+3. Design the User model with an ID, unique email, and password hash.
+4. Create and verify the database migration.
+5. Begin implementing registration with secure password hashing.
+
+Continue from the existing project rather than creating a separate application or replacing working code.
+
+**Verification approach:** Use compile/import checks and manual Swagger verification for now. Do not mark authentication as implemented until the relevant functionality has been built and verified.
+
+Update this section only when progress is confirmed. Preserve the historical learning record and distinguish conceptual learning from working implementation.
 
 ## 18.5 Roadmap Maintenance
 

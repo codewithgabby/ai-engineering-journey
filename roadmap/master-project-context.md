@@ -160,13 +160,17 @@ Phase 1 — Backend Engineering Mastery
 
 **Status:** IN PROGRESS
 
-**Current Focus:** Week 9 — Database + FastAPI Integration and Layered Backend Architecture
+**Current Focus:** Authentication Fundamentals — transitioning from backend architecture into authentication implementation.
 
-**Current Learning Day:** Day 41 completed; Day 42 is next.
+**Current Learning Day:** Day 46 completed; Day 47 is next.
+
+**Current Project:** `projects/production-saas-backend/`
+
+**Current Implementation Status:** Authentication implementation has not started. Existing product CRUD functionality remains in the project. Continue from the current codebase rather than creating a separate application.
 
 ---
 
-## Weekly Progress Update — Through Day 41
+## Weekly Progress Update — Through Day 46
 
 **Current Project:** `projects/production-saas-backend/`
 
@@ -174,32 +178,73 @@ Phase 1 — Backend Engineering Mastery
 
 Client → FastAPI Router → Service Layer → Repository Layer → PostgreSQL
 
-### Day 39 — Query Execution Plans
+### Previously Confirmed Backend Progress
+
+**Day 39 — Query Execution Plans**
 - Topic: `EXPLAIN` and `EXPLAIN ANALYZE`.
 - Note creation and practical experiment completion still need confirmation.
 
-### Day 40 — FastAPI + PostgreSQL Integration
+**Day 40 — FastAPI + PostgreSQL Integration**
 - Integrated FastAPI endpoints with PostgreSQL using SQLAlchemy.
 - Implemented and manually tested product CRUD endpoints.
 - Used Pydantic schemas for request validation and response serialization.
 - Applied the Alembic migration for the products table.
 
-### Day 41 — Service and Repository Layers
+**Day 41 — Service and Repository Layers**
 - Introduced separation between HTTP handling, application logic, and database access.
 - Refactored `GET /products` to use the service and repository layers.
 - Refactored `GET /products/{product_id}` to use the service and repository layers.
 - Refactored `POST /products` to use the service and repository layers.
 - Manually tested the refactored endpoints successfully.
 
-### Pending Work
-- Connect the repository update function to the service and router.
-- Test the update operation, including a missing product.
-- Refactor the delete operation using the same layered architecture.
-- Add automated endpoint regression tests.
-- Confirm that the latest notes and code changes have been committed and pushed to GitHub.
+### Day 46 — Authentication Fundamentals
 
-### Next Learning Day — Day 42
-Continue the layered architecture refactoring by connecting and testing the update operation, then proceed to the delete operation.
+- Reviewed the difference between authentication and authorization.
+- Learned why valid authentication does not automatically grant access to every resource.
+- Studied access tokens as credentials that must be protected.
+- Introduced password hashing and why plaintext passwords must not be stored.
+- Learned how reusable FastAPI dependencies can centralize authentication checks.
+- Inspected `app/main.py`, `app/database.py`, and `app/models/product.py`.
+- Confirmed that the project has an Alembic configuration and migration directory.
+
+**Important distinction:** Day 46 covered foundational concepts and project inspection. No authentication files were created or modified during that session.
+
+### Current Implementation Status
+
+**Existing backend**
+- Product model, database configuration, schemas, and product endpoints exist.
+- The project uses FastAPI, SQLAlchemy, PostgreSQL, Pydantic, and Alembic.
+- Product service/repository refactoring and the remaining update/delete work have not been confirmed complete.
+- Automated endpoint regression tests remain unconfirmed.
+
+**Authentication**
+- Fundamentals: In progress.
+- User model and migration: Not started.
+- Registration and password hashing: Not started.
+- Login and token generation: Not started.
+- Token validation and protected endpoints: Not started.
+- Resource ownership and authorization enforcement: Not started.
+
+### Next Learning Day — Day 47
+
+**Focus: Prepare the database foundation for authentication.**
+
+1. Inspect `alembic/env.py` and the existing migration files.
+2. Understand how Alembic discovers SQLAlchemy models.
+3. Design a User model with an ID, unique email, and password hash.
+4. Create and verify the database migration.
+5. Begin registration implementation using secure password hashing.
+
+Continue with the existing project and explain each change before implementing it.
+
+**Verification approach:** For now, use Python compile/import checks and manual verification through Swagger. Automated tests are not part of the current immediate workflow.
+
+### Progress Accuracy Rules
+
+- Distinguish conceptual learning from working implementation.
+- Do not mark a feature complete until its implementation and verification are confirmed.
+- Preserve unfinished curriculum items for later completion.
+- Update this section after each learning session using confirmed progress only.
 
 ---
 
@@ -883,18 +928,51 @@ For the latest lesson progress, consult the Current Phase and Weekly Progress Up
 
 ## Current Production Backend Project
 
-**Project path:** `projects/production-saas-backend/`
+**Project Path:** `projects/production-saas-backend/`
 
-**Technology stack:** FastAPI, SQLAlchemy, PostgreSQL, Alembic, Pydantic, pytest.
+**Technology Stack:** FastAPI, SQLAlchemy, PostgreSQL, Alembic, Pydantic, pytest.
 
-**Current implementation status:**
-- Product model, database configuration, schemas, and product CRUD endpoints exist. The service/repository refactoring and automated testing are still in progress.
-- GET and POST operations have been refactored to use service and repository layers.
-- Repository update function exists but is not yet connected to the service and router.
-- PUT and DELETE refactoring remains pending.
-- Automated endpoint regression tests remain to be confirmed.
+**Architecture:**
 
-**Security reminder:** Keep `.env` and database credentials out of Git.
+Client → FastAPI Router → Service Layer → Repository Layer → PostgreSQL
+
+### Existing Implementation
+
+- `app/main.py` initializes the FastAPI application and includes the product router.
+- `app/database.py` configures the database engine, session factory, and database dependency.
+- `app/models/product.py` defines the Product model.
+- Product schemas, repository, service, and router modules exist.
+- Alembic configuration and migration directories exist.
+- The existing product CRUD implementation must be preserved while new features are introduced.
+
+### Outstanding Backend Work
+
+- Confirm and complete the remaining product update and delete service/repository refactoring.
+- Verify the relevant endpoints manually.
+- Revisit automated endpoint regression testing when the learning workflow resumes it.
+
+### Authentication Implementation Status
+
+Authentication implementation has not started.
+
+Planned sequence:
+
+1. Inspect the existing Alembic environment and migration history.
+2. Create a User model with an ID, unique email, and password hash.
+3. Generate and verify the User table migration.
+4. Implement registration with secure password hashing.
+5. Implement login and token issuance.
+6. Validate tokens through reusable FastAPI dependencies.
+7. Protect endpoints and enforce resource ownership.
+8. Manually verify successful requests, invalid credentials, missing or invalid tokens, and unauthorized resource access.
+
+### Engineering Safeguards
+
+- Keep `.env` files and database credentials out of Git.
+- Review staged changes before committing.
+- Do not replace working project files unnecessarily.
+- Use compile/import checks and manual Swagger verification for the current learning workflow.
+- Do not describe planned authentication functionality as implemented until it has been built and verified.
 
 ---
 
