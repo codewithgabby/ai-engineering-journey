@@ -7,6 +7,7 @@ from alembic import context
 
 from app.database import DATABASE_URL, Base
 from app.models.product import Product
+from app.models.user import User
 
 
 # this is the Alembic Config object
